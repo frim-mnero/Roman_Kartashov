@@ -11,6 +11,9 @@ body {
   overflow-x: hidden;
   background: #f0edf8;
 }
+.boduHidden {
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   color: #242424;
@@ -20,7 +23,9 @@ a {
   display: flex;
   flex-direction: column;
 }
-
+.closeNav{
+  display: none;
+}
 .container {
   width: 1420px;
   margin: 0 auto;
@@ -383,7 +388,7 @@ nav ul {
   line-height: 26px; /* 162.5% */
 }
 .title__services {
-  z-index: 4;
+  z-index: 1;
   min-width: 720px;
   display: flex;
   flex-wrap: wrap;
@@ -1135,16 +1140,18 @@ nav ul {
   display: flex;
   gap: 60px;
 }
+.hidden{
+  display: none;
+}
 .otzivi__group {
   margin-bottom: 50px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex; */
+  /* justify-content: space-between; */
   gap: 20px;
 }
 .otzivi__group_item {
-  display: flex;
-  justify-content: space-between;
-  width: 700px;
+ 
+  width: 100%;
   padding: 30px;
 
   flex-shrink: 0;
@@ -1593,14 +1600,7 @@ nav ul {
   border-radius: 25px;
   background: #fff;
 }
-.closeWindow {
-  border: none;
-  background: inherit;
-  position: absolute;
-  right: 400px;
-  top: 80px;
-  /* background-color: inherit; */
-}
+
 .backgroundDark {
   background: rgba(44, 68, 85, 0.6);
 }
@@ -1657,7 +1657,6 @@ nav ul {
   display: none;
 }
 .closeNav {
-  display: none;
 }
 .shadowBlueBlock {
   width: 100%;
@@ -1687,9 +1686,9 @@ nav ul {
   padding: 0;
   margin: 0;
   display: inline-block;
-  position: absolute;
-  top: 120px;
-  right: 620px;
+  position: relative;
+  top: -350px;
+  right: 0px;
   background: inherit;
   border: none;
   z-index: 100;
@@ -1710,7 +1709,7 @@ nav ul {
   .nav {
     transition: 0.5s all;
     width: 427px;
-    z-index: 9;
+    z-index: 39;
     position: absolute;
     left: -350px;
     top: 0;
@@ -1747,6 +1746,7 @@ nav ul {
     background: inherit;
     border: none;
     z-index: 100;
+    /* display: none; */
   }
   .openNav {
     position: absolute;
@@ -1947,7 +1947,7 @@ nav ul {
     top: 84px;
     right: 515px;
   }
-  
+
   .footer-icons-right {
     top: 269px;
     right: 66px;
@@ -1967,6 +1967,9 @@ nav ul {
   .circle3 {
     display: none;
   }
+  .hiddenOver {
+    overflow: hidden;
+  }
   html,
   body {
     max-height: 100%;
@@ -1982,14 +1985,24 @@ nav ul {
     overflow-x: hidden;
     height: auto;
   }
-
+  .closeWindow {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    position: absolute;
+    top: 63px;
+    right: 122px;
+    background: inherit;
+    border: none;
+    z-index: 100;
+    display: inline-block;
+  }
   *,
   *:after,
   *:before {
     box-sizing: border-box;
   }
-  .burger {
-  }
+  
   .container {
     /* max-width: 1200px; */
     /* margin-left: 200px; */
@@ -2031,6 +2044,22 @@ nav ul {
     justify-content: flex-start;
     gap: 0;
   }
+  .moreList{
+    padding-bottom: 400px;
+  }
+  .nav ul li ul{
+    display: none;
+    left: -60px;
+    opacity: 1;
+    background: #fff;
+    height: auto;
+    border-radius: 0;
+    z-index: 550px;
+  }
+  
+   .nav ul li ul:hover>{
+    display: block;
+   }
   .socials {
     margin-left: auto;
   }
@@ -2282,7 +2311,7 @@ nav ul {
     margin-bottom: 0;
     margin-top: 20px;
   }
-  
+
   .emsTitle {
     max-width: 1119px;
     color: #2c4455;
@@ -2340,11 +2369,18 @@ nav ul {
   .otzivi__group {
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
+    
+    /* overflow: hidden; */
     margin-bottom: 40px;
   }
+  .otzivi_group_item-left{
+    width: 100%;
+  }
   .otzivi__group_item {
-    /* width: 100%; */
+    position: relative;
+    margin: 0 auto;
+    /* transform: translateX(-100%); */
+    width: 100%;
   }
   .otziv__item-title {
     color: #242424;
@@ -2353,7 +2389,8 @@ nav ul {
     font-style: normal;
     font-weight: 400;
     line-height: 44px; /* 146.667% */
-    width: 540px;
+    width: 100%;
+    
   }
   .otziv__item-pacient {
     color: #242424;
@@ -2364,7 +2401,7 @@ nav ul {
     line-height: 26px; /* 162.5% */
   }
   .otziv__item-description {
-    width: 540px;
+    width: 100%;
     height: 73px;
     overflow: hidden;
     color: #242424;
@@ -2381,6 +2418,15 @@ nav ul {
   }
   .otziv_item-readMore:hover {
     cursor: pointer;
+  }
+  .leftSlide:hover>.otzivi__group_item{
+    transform: translateX(100%);
+  }
+  .leftAnim{
+    left:-100%;
+  }
+  .rightAnim{
+    left: 100%;
   }
   .consultation__title {
     width: 700px;
@@ -2411,7 +2457,7 @@ nav ul {
   #NameLabel,
   #TelLabel,
   #EmailLabel {
-    width: 339px;
+    max-width: 70vw;
   }
   #TextLabel {
     width: 339px;
@@ -2485,11 +2531,30 @@ align-items: flex-start; */
   .circle3 {
     display: none;
   }
+  .hiddenOver {
+    overflow: hidden;
+  }
   html,
   body {
     max-height: 100%;
 
     overflow-x: hidden;
+  }
+  .closeNav{}
+  .blockZapisConsult{
+   
+    max-width: 95vw;
+    }
+  
+  .form input{
+    max-width: 70vw;
+   
+  }
+  .closeWindow{
+    right: 0;
+  }
+  #TextLabel {
+    width: 309px;
   }
   body {
     margin: 0;
@@ -2570,9 +2635,9 @@ align-items: flex-start; */
     justify-content: space-between;
   }
   .logo {
-   gap: 10px;
+    gap: 10px;
   }
- 
+
   .logo p:first-child {
     font-size: 23px;
   }
@@ -2601,7 +2666,7 @@ align-items: flex-start; */
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .section__title{
+  .section__title {
     max-width: 767px;
   }
   .section__title_head {
@@ -2624,7 +2689,7 @@ align-items: flex-start; */
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 162.5% */
-    z-index: 2;
+    z-index: 1;
     width: 95vw;
   }
   .section__title_item span {
@@ -2638,12 +2703,12 @@ align-items: flex-start; */
   .title__services {
     max-width: 767px;
     margin-bottom: 50px;
-    z-index: 3;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .section__title_left{
+  .section__title_left {
     margin-bottom: 50px;
   }
   .section__title_left .title__zapic {
@@ -2659,8 +2724,7 @@ align-items: flex-start; */
     align-items: center;
     gap: 10px;
   }
- 
- 
+
   .photoDoctor {
     position: static;
     max-width: 80vw;
@@ -2670,7 +2734,6 @@ align-items: flex-start; */
     width: 90vw;
     order: 1;
     margin-left: 0;
-    
   }
   .description-vacation {
     color: #585858;
@@ -2682,13 +2745,13 @@ align-items: flex-start; */
     line-height: normal;
     white-space: nowrap;
   }
-  .emsGroup-left{
+  .emsGroup-left {
     width: 100%;
   }
-  .emsTitle{
+  .emsTitle {
     width: 100%;
   }
-  .emsText{
+  .emsText {
     max-width: 767px;
     text-align: center;
   }
@@ -2763,12 +2826,12 @@ align-items: flex-start; */
     font-weight: 400;
     line-height: 26px; /* 162.5% */
   }
-  .planImg{
+  .planImg {
     width: 100%;
     border-radius: 15px;
   }
   .plan__title {
-    width:100%;
+    width: 100%;
     color: #2c4455;
     text-align: center;
     font-family: Playfair Display;
@@ -2939,8 +3002,6 @@ align-items: flex-start; */
   .otzivi__group_item {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
   }
   #NameLabel,
   #TelLabel,
@@ -3092,8 +3153,5 @@ align-items: flex-start; */
   .footer-icons-right {
     top: 555px;
   }
-  .contBlockCons {
-    width: 300px;
-    height: auto;
-  }
+  
 }
