@@ -16,6 +16,7 @@ a {
   text-decoration: none;
   color: #242424;
 }
+
 .header {
   display: flex;
   flex-direction: column;
@@ -73,6 +74,7 @@ a {
   gap: 40px;
   align-items: center;
 }
+
 .circle1 {
   z-index: -1;
   position: absolute;
@@ -151,6 +153,7 @@ a {
 }
 .frames {
   position: absolute;
+  z-index: -41;
   right: 185px;
   top: 439px;
 }
@@ -276,7 +279,12 @@ nav ul {
 .nav ul li:hover > ul {
   display: flex;
 
-  /* position: absolute; */
+  /* position: ab
+  .solute; */
+}
+.moreList::after{
+  position: absolute;
+  content: url(./img/iconamoon_arrow-up-2-lightb;l.png);
 }
 .secondList:hover {
   color: #669abd;
@@ -435,12 +443,10 @@ nav ul {
 }
 .zapis {
   margin-top: 99px;
-  height: 473px;
   background: #669abd;
   filter: drop-shadow(0px -60px 50px #e2e2e2);
 
   width: 1920px;
-  height: 473px;
   background: #669abd;
 }
 .info {
@@ -450,6 +456,7 @@ nav ul {
   flex-direction: column;
   z-index: 3;
   position: relative;
+  padding-bottom: 50px;
 }
 .infomain {
   color: #fff;
@@ -491,7 +498,7 @@ nav ul {
 }
 .zap {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   opacity: 0.6;
   top: 53.4px;
 }
@@ -1188,6 +1195,9 @@ nav ul {
   display: inline-block;
   align-self: flex-start;
 }
+.servZap {
+  margin-top: 16px;
+}
 .otzivi_group_item-left {
   display: flex;
   width: 540px;
@@ -1335,7 +1345,7 @@ nav ul {
   align-items: center;
 }
 .soglashenieText {
-  max-width: 284px;
+  width: 284px;
   white-space: pre-wrap;
 }
 .consultation-block-right {
@@ -1555,16 +1565,26 @@ nav ul {
 .mainRightEms img {
   z-index: 3;
 }
+.formes {
+  z-index: 150;
+}
+.formes label {
+  z-index: 150;
+}
 .contBlockCons {
   width: 100vw;
   height: 100vh;
-  display: none;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  z-index: 10;
+  display: none;
+  position: fixed;
+}
+.openFormZapics {
+  display: inline-flex;
 }
 .blockZapisConsult {
-  z-index: 3;
+  z-index: 150;
   display: inline-flex;
   padding: 50px 100px;
   flex-direction: column;
@@ -1572,15 +1592,13 @@ nav ul {
   gap: 30px;
   border-radius: 25px;
   background: #fff;
-  /* position: absolute; */
-  top: 0;
-  left: 682px;
-  /* position: relative; */
 }
 .closeWindow {
   border: none;
-  margin-top: -697px;
-
+  background: inherit;
+  position: absolute;
+  right: 400px;
+  top: 80px;
   /* background-color: inherit; */
 }
 .backgroundDark {
@@ -1642,15 +1660,17 @@ nav ul {
   display: none;
 }
 .shadowBlueBlock {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  padding: 100%;
   position: absolute;
   background: rgba(44, 68, 85, 0.6);
-  z-index: 2;
   display: none;
+  overflow: hidden;
 }
 .displBlock {
   display: block;
+  z-index: -1;
 }
 .allServBtnOpac {
   display: none;
@@ -1660,35 +1680,64 @@ nav ul {
   right: 251px;
   top: 84px;
 }
+.frstzp {
+  margin-top: 30px;
+}
+
 @media (max-width: 1440px) {
   .container {
     width: 100%;
     padding: 0 60px;
     margin: 0 auto;
   }
+ 
+
+  .header__down {
+    justify-content: flex-start;
+  }
+  .socials{
+    margin-left: auto;
+  }
   .nav {
     transition: 0.5s all;
     width: 427px;
-
+    z-index: 9;
     position: absolute;
     left: -350px;
     top: 0;
   }
+    /* .lnav ul li ul.listSd{
+      display: block;
+    appearance: inherit;
+    opacity: 1;
+    z-index: 4;
+    } */
+  .shadowNav {
+    position: absolute;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(44, 68, 85, 0.6);
+  }
   .backgroundBody {
     background: rgba(44, 68, 85, 0.6);
+    z-index: 7;
     overflow-y: hidden;
+  }
+  .hiddenOver{
+    overflow: hidden;
   }
   .closeNav {
     padding: 0;
     margin: 0;
     display: inline-block;
-    z-index: 3;
     position: absolute;
     top: 23px;
     right: 100px;
     background: inherit;
     border: none;
-    z-index: 3;
+    z-index: 100;
   }
   .openNav {
     position: absolute;
@@ -1705,7 +1754,7 @@ nav ul {
     left: 0;
     top: 0;
     row-gap: 30px;
-    z-index: 2;
+    z-index: 10;
 
     padding-left: 61px;
     padding-right: 67px;
@@ -1717,6 +1766,7 @@ nav ul {
   }
   .title__services_item {
     width: 348px;
+    z-index: -2;
   }
   .section__title_head {
     color: #2c4455;
@@ -1751,10 +1801,12 @@ nav ul {
     padding: 20px;
   }
   .section__description {
+    z-index: 0;
     width: 348px;
     height: 218px;
   }
   .description-citata {
+    z-index: 1;
     color: #242424;
     font-family: Montserrat;
     font-size: 16px;
@@ -2308,76 +2360,573 @@ nav ul {
   #EmailLabel {
     width: 339px;
   }
-  #TextLabel{
+  #TextLabel {
     width: 339px;
   }
-  .consultation-block-right img{
+  .consultation-block-right img {
     position: absolute;
     right: -180px;
     z-index: 1;
   }
-  .infoDoctorCons{
+  .infoDoctorCons {
     right: 20px;
     top: 500px;
   }
-  .map{
-    background-position-x:55% ;
+  .map {
+    background-position-x: 55%;
   }
-  .mohc-frameFooter{
+  .mohc-frameFooter {
     display: none;
   }
-  .logo-nameFooter{
-    color: #FFF;
-font-family: Playfair Display;
-font-size: 26px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 3.9px;
-text-transform: uppercase;
+  .logo-nameFooter {
+    color: #fff;
+    font-family: Playfair Display;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.9px;
+    text-transform: uppercase;
   }
-  .logo-descriptionFooter{
-    color: #FFF;
-text-align: center;
-font-family: Montserrat;
-font-size: 13px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  .logo-descriptionFooter {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-  .logo-grpoup{
-      display: flex;
-flex-direction: column;
-align-items: flex-start;
-
-
+  .logo-grpoup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .footer__cont {
     display: flex;
     column-gap: 50px;
   }
-  .footer-right_nav ul li a{
-color: #FFF;
-font-family: Montserrat;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+  .footer-right_nav ul li a {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
   }
-  .footer-right_nav ul{
+  .footer-right_nav ul {
     display: flex;
-width: 222px;
-flex-direction: column;
-/* justify-content: flex-end;
+    width: 222px;
+    flex-direction: column;
+    /* justify-content: flex-end;
 align-items: flex-start; */
-gap: 30px;
-flex-shrink: 0;
+    gap: 30px;
+    flex-shrink: 0;
     position: relative;
     right: 300px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
   .nav {
     width: 300px;
+  }
+  .container {
+    width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+  }
+  .headerUpLeft {
+    display: none;
+  }
+  .langs {
+    z-index: 1;
+    display: flex;
+  }
+  .header-number {
+    color: #242424;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+  }
+  .header-number::before {
+    content: url(./img/tabler_phone.svg);
+  }
+  .headerUpRight {
+    gap: 60px;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .logo-name {
+    color: #242424;
+    font-family: Playfair Display;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.84px;
+
+    padding-right: 24px;
+  }
+  .logo-description {
+    color: #585858;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .header__down {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .section__title_head {
+    color: #2c4455;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+    width: 332px;
+    text-align: center;
+    height: auto;
+  }
+  .section__title_item {
+    color: #242424;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    width: 332px;
+  }
+  .section__title_item span {
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  .title__services {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .section__title_left .title__zapic {
+    display: inline-flex;
+    width: 332px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 8px;
+    /* display: flex; */
+    padding: 20px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .photoDoctor {
+    position: static;
+    width: 320px;
+    transform: scale(1.3);
+  }
+  .section__description {
+    width: 332px;
+    order: 1;
+    margin: 0 auto;
+  }
+  .description-vacation {
+    color: #585858;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  .info {
+    width: 332px;
+    margin-bottom: 0;
+  }
+  .infomain {
+    width: 332px;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 141.667% */
+  }
+  .infopometka {
+    color: #e1eef6;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .info__visit {
+    color: #fbf6f2;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 141.667% */
+    width: 332px;
+    margin-bottom: 30px;
+  }
+
+  .head-title-left {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .bazaliomaTitle {
+    margin-top: 0;
+    color: #2c4455;
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px; /* 120% */
+  }
+  .bazaliomaDescription {
+    color: #2c4455;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 145.455% */
+  }
+  .head-title-right {
+    width: 332px;
+  }
+  .bazaliomaText {
+    width: 332px;
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  .plan__title {
+    width: 332px;
+    color: #2c4455;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+    margin-top: 40px;
+  }
+  .plan__description {
+    width: 332px;
+    color: #242424;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  .plan__steps {
+    gap: 10px;
+  }
+  .plan__steps_item {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .mohcTitle {
+    width: 332px;
+    color: #fff;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+  }
+  .mohcDesc {
+    width: 332px;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+  }
+  .mohsGroup {
+    gap: 10px;
+  }
+  .mohsGroup__item {
+    display: flex;
+    width: 332px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* flex-shrink: 0; */
+    margin: 0 auto;
+  }
+  .mohsGroup__item-title {
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    width: 272px;
+  }
+  .mohsGroup__item-desc {
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  .Services__title {
+    width: 332px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: #2c4455;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+  }
+  .Services__descriprion {
+    color: #242424;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  button.allServBtnOpac {
+    display: inline-flex;
+    padding: 20px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transform: translate(-70%);
+  }
+  .emsTitle {
+    width: 332px;
+    color: #2c4455;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+  }
+  .mainRightEms {
+    width: 332px;
+  }
+  .emsText {
+    width: 332px;
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  .emsList {
+    width: 332px;
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px; /* 166.667% */
+  }
+  .emsListItem {
+    width: 332px;
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+  .btnOtz {
+    width: 296px;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .otzivi__group {
+    margin-bottom: 20px;
+  }
+  .otzivi__title {
+    color: #2c4455;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+  }
+  .otzivi__group_item {
+    width: 325px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .otzivi_group_item-left,
+  .otzivi_group_item-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+  }
+  .otzivi_group_item-left {
+    padding: 0;
+  }
+  .otziv__item-title {
+    width: 272px;
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 141.667% */
+  }
+  .otziv__item-pacient {
+    color: #242424;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+  }
+  .otziv__item-description {
+    width: 272px;
+    overflow: hidden;
+    color: #242424;
+    text-overflow: ellipsis;
+    whitespace: nowrap;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+  }
+
+  .otzivi_group_item-right {
+    order: -1;
+    margin-bottom: 0;
+    align-self: center;
+  }
+  .otzivi_group_item-right img {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 20px;
+  }
+  .arrowsOtz {
+    margin-bottom: 50px;
+  }
+  .consultation-cont {
+    width: 332px;
+    margin: 0 auto;
+  }
+  .consultation__title {
+    width: 332px;
+    color: #2c4455;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 125% */
+  }
+  .consultation__text {
+    width: 332px;
+    color: #242424;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin-bottom: 0;
+  }
+  .consultation-block {
+    padding-bottom: 650px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .consultation-block-right {
+    margin-bottom: 0;
+  }
+  .consultation-block-right img {
+    display: inline-block;
+    margin-bottom: 50%;
+    transform: scale(0.6);
+    order: 2;
+  }
+  .infoDoctorCons {
+    position: absolute;
+    top: -320px;
+    right: -25px;
+  }
+  .consultation-form {
+    position: relative;
+    top: 700px;
+    left: -20px;
+    order: 3;
+  }
+  .title__zapicCheck {
+    margin: 0 auto;
+  }
+  .map {
+    transform: translateX(0%);
+  }
+
+  .footer__cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-right {
+    margin-top: 40px;
+    display: flex;
+    padding-bottom: 200px;
+  }
+  .footer-right_nav {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    /* margin: 0 auto; */
+  }
+  .footer-right_nav ul {
+    position: absolute;
+    left: 22px;
+  }
+  .footer-icons-right {
+    top: 555px;
   }
 }
