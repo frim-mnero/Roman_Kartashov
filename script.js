@@ -6,6 +6,19 @@ let shadow = document.querySelector(".shadowBlueBlock");
 let formZapic = document.querySelector(".contBlockCons");
 let closeForm = document.querySelector(".closeWindow");
 
+
+const formBtn = document.querySelector(".title__zapicCheck");
+const formBtnPopup = document.querySelector(".btn_zapicFOrmPopUp");
+
+
+formBtnPopup.addEventListener("click",function(evt){
+  evt.preventDefault();
+});
+
+formBtn.addEventListener("click",function(evt){
+  evt.preventDefault();
+});
+
 const btmNext = document.querySelector(".rightSlide");
 const btmPrev = document.querySelector(".leftSlide");
 
