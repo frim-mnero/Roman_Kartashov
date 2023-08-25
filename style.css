@@ -383,6 +383,7 @@ nav ul {
   line-height: 26px; /* 162.5% */
 }
 .title__services {
+  z-index: 4;
   min-width: 720px;
   display: flex;
   flex-wrap: wrap;
@@ -1960,7 +1961,7 @@ nav ul {
     right: 196px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .circle2-bazalioma,
 .circle2,
 .circle3{
@@ -2608,6 +2609,7 @@ body {
   }
   .title__services {
     margin: 0 auto;
+    
     display: flex;
     flex-direction: column;
   }
