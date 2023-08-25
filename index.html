@@ -20,12 +20,12 @@
     <title>romankartashov</title>
   </head>
   <body>
-    <div class="shadowBlueBlock"></div>
+    
     <div class="contBlockCons">
-       
+       <div class="shadowBlueBlock"></div>
       <div class="blockZapisConsult">
-        <p class="blockZapicConsult_title">Записаться на консультацию</p>
-        <form action="" class="form">
+        <p class="blockZapicConsult_title" >Записаться на консультацию</p>
+        <form action="" class=" form formes">
           <label for="name">
             Ваше имя
             <input type="text" id="name">
@@ -47,7 +47,7 @@
         </form>    
        
     </div>
-    <button class="closeWindow"><img src="./img/ic_round-close.png" alt=""></button>
+    <button class="closeWindow"  onclick="buy()"><img src="./img/ic_round-close.png" alt=""></button>
     </div>
     
 
@@ -82,7 +82,8 @@
           </div>
         </a>
         <nav class="nav">
-          <button class="closeNav"><img src="./img/ic_round-closeBlue.png" alt=""></button>
+          
+          <button class="closeNav"><img src="./img/ic_round-closeBlue.png" alt="dfa"></button>
           <ul>
             <li>
               <a class="linkNav" href="#"> Главная </a>
@@ -97,8 +98,8 @@
             </li>
 
             <li >
-              <!--поставить значек -->
-              <a class="linkNav" href="#"> Услуги </a>
+              
+              <a class="linkNav moreList" href="#"> Услуги </a>
               <ul class="listSd">
                 
                 <li><a class="secondList"  href="#">Консультация</a></li>
@@ -157,7 +158,7 @@
             <img src="./img/teenyicons_certificate-outline.svg" alt="" />
             <p>И самое главное – опыт!</p>
           </div>
-        <button class="title__zapic">Записаться на консультацию</button>
+        <button class="title__zapic frstzp" onclick="hello()">Записаться на консультацию</button>
         </div>
         
       </div>
@@ -181,12 +182,13 @@
         <img class="zap" src="..//romankartashov/img/Page-1.svg" alt="" />
         <p class="infomain">
           В России злокачественные образования кожи (кроме меланомы) у женщин
-          составляют 13%. У мужчин 10%. Это каждая 8ая женщина и каждый 10ый
-          мужчина!
+          составляют 13%. У мужчин 10%. <br>
+          Это каждая 8ая женщина и каждый 10ый мужчина!
         </p>
+        
         <p class="infopometka">*по данным Минздрава за 2021 год</p>
         <p class="info__visit">Не откладывайте свой визит к врачу!</p>
-        <button class="title__zapic firstZapic ">Записаться на консультацию</button>
+        <button class="title__zapic firstZapic" onclick="hello()">Записаться на консультацию</button>
       </div>
     </section>
 
@@ -312,7 +314,7 @@
           
         </div>
       </div>
-      <button class="title__zapic">Записаться на консультацию</button>
+      <button class="title__zapic" onclick="hello()">Записаться на консультацию</button>
     </section>
     <section class="MOHC">
       <section class="contMOHC container">
@@ -405,7 +407,7 @@
               Обсуждаем возможные варианты лечения.
             </p>
             <div class="Services__item-btns">
-              <button class="Services__zapic btn-serv">Записаться</button>
+              <button class="Services__zapic btn-serv " onclick="hello()">Записаться</button>
               <button class="Services__more btn-serv">Подробнее</button>
             </div>
           </div>
@@ -426,7 +428,7 @@
               диагноз. Изучаем исследования, которые возможно есть у Вас.
             </p>
             <div class="Services__item-btns">
-              <button class="Services__zapic btn-serv ">Записаться</button>
+              <button class="Services__zapic btn-serv "  onclick="hello()">Записаться</button>
               <button class="Services__more btn-serv">Подробнее</button>
             </div>
           </div>
@@ -447,7 +449,7 @@
               Обсуждаем возможные варианты лечения.
             </div>
             <p class="Services__item-btns">
-              <button class="Services__zapic btn-serv">Записаться</button>
+              <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
               <button class="Services__more btn-serv">Подробнее</button>
             </p>
           </div>
@@ -468,7 +470,7 @@
               диагноз. Изучаем исследования, которые возможно есть у Вас.
             </p>
             <div class="Services__item-btns">
-              <button class="Services__zapic btn-serv">Записаться</button>
+              <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
               <button class="Services__more btn-serv">Подробнее</button>
             </div>
           </div>
@@ -489,7 +491,7 @@
               диагноз. Изучаем исследования, которые возможно есть у Вас.
             </p>
             <div class="Services__item-btns">
-              <button class="Services__zapic btn-serv">Записаться</button>
+              <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
               <button class="Services__more btn-serv">Подробнее</button>
             </div>
           </div>
@@ -512,7 +514,7 @@
               диагноз. Изучаем исследования, которые возможно есть у Вас.
             </p>
             <div class="Services__item-btns">
-              <button class="Services__zapic btn-serv">Записаться</button>
+              <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
               <button class="Services__more btn-serv">Подробнее</button>
             </p>
           </div>
@@ -533,7 +535,7 @@
               диагноз. Изучаем исследования, которые возможно есть у Вас.
             </p>
             <div class="Services__item-btns">
-              <button class="Services__zapic btn-serv">Записаться</button>
+              <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
               <button class="Services__more btn-serv">Подробнее</button>
             </div>
           </div>
@@ -553,14 +555,14 @@
               На консультации мы с Вами проводим осмотр. Определяем точный диагноз. Изучаем исследования, которые возможно есть у Вас. 
             </p>
             <div class="Services__item-btns">
-              <button class="Services__zapic btn-serv">Записаться</button>
+              <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
               <button class="Services__more btn-serv">Подробнее</button>
             </div>
             
           </div>
            
         </div>
-         <button class="title__zapic allServBtnOpac">Смотреть все услуги</button>
+         <button class="title__zapic allServBtnOpac ">Смотреть все услуги</button>
       </div> 
       <button class="title__zapic allServBtn">Смотреть все услуги</button>
     </section>
@@ -661,9 +663,9 @@
                 <input type="text" id="TextLabel">
               </div>
               <div class="soglGroup">
-                <input type="checkbox" id="soglCheck" class="realCheckbox">
+                <input type="checkbox" id="soglsCheck" class="realCheckbox">
                 <span class="customCheckbox"></span>
-                <label  class="soglashenieText" for="soglCheck">Принимаю условия <a href="#">пользовательского соглашения</a></label>
+                <label  class="soglashenieText" for="soglsCheck">Принимаю условия <a href="#">пользовательского соглашения</a></label>
               </div>
                <input  type="submit" class="title__zapicCheck" value="Отправить"></input>
             </form>
