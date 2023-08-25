@@ -807,7 +807,7 @@ nav ul {
   font-style: normal;
   font-weight: 400;
   line-height: 86px; /* 122.857% */
-  width: 978px;
+  width: 100%;
 }
 .mohsGroup__item-img {
   z-index: 1;
@@ -1919,7 +1919,7 @@ nav ul {
     width: 340px;
   }
   .emsGroup-left {
-    width: 532px;
+    width: 100%;
   }
   .mainRightEms {
     width: 528px;
@@ -1947,6 +1947,7 @@ nav ul {
     top: 84px;
     right: 515px;
   }
+  
   .footer-icons-right {
     top: 269px;
     right: 66px;
@@ -2281,10 +2282,9 @@ nav ul {
     margin-bottom: 0;
     margin-top: 20px;
   }
-  .Services__group_item {
-  }
+  
   .emsTitle {
-    width: 100%;
+    max-width: 1119px;
     color: #2c4455;
     text-align: center;
     font-family: Playfair Display;
@@ -2302,7 +2302,7 @@ nav ul {
     margin-bottom: 30px;
   }
   .emsGroup-left {
-    width: 700px;
+    width: 100%;
   }
   .emsText {
     color: #242424;
@@ -2338,13 +2338,13 @@ nav ul {
     line-height: 76px; /* 126.667% */
   }
   .otzivi__group {
-    width: 700px;
+    width: 100%;
     margin: 0 auto;
     overflow: hidden;
     margin-bottom: 40px;
   }
   .otzivi__group_item {
-    width: 700px;
+    /* width: 100%; */
   }
   .otziv__item-title {
     color: #242424;
@@ -2682,6 +2682,16 @@ align-items: flex-start; */
     line-height: normal;
     white-space: nowrap;
   }
+  .emsGroup-left{
+    width: 100%;
+  }
+  .emsTitle{
+    width: 100%;
+  }
+  .emsText{
+    max-width: 767px;
+    text-align: center;
+  }
   .info {
     max-width: 767px;
     margin-bottom: 0;
@@ -2786,7 +2796,7 @@ align-items: flex-start; */
     margin: 0 auto;
   }
   .mohcTitle {
-    width: 332px;
+    width: 100%;
     color: #fff;
     text-align: center;
     font-family: Playfair Display;
@@ -2796,7 +2806,7 @@ align-items: flex-start; */
     line-height: 50px; /* 125% */
   }
   .mohcDesc {
-    width: 332px;
+    width: 100%;
     color: #fff;
     text-align: center;
     font-family: Montserrat;
@@ -2835,7 +2845,7 @@ align-items: flex-start; */
     line-height: 26px; /* 162.5% */
   }
   .Services__title {
-    width: 332px;
+    width: 100%;
     margin-top: 50px;
     margin-bottom: 20px;
     color: #2c4455;
@@ -2864,7 +2874,7 @@ align-items: flex-start; */
   }
   .emsTitle {
     overflow-wrap: break-word;
-    width: 332px;
+    width: 100%;
     color: #2c4455;
     text-align: center;
     font-family: Playfair Display;
@@ -2877,7 +2887,7 @@ align-items: flex-start; */
     width: 332px;
   }
   .emsText {
-    width: 332px;
+    width: 100%;
     color: #242424;
     font-family: Montserrat;
     font-size: 16px;
@@ -2886,7 +2896,7 @@ align-items: flex-start; */
     line-height: 26px; /* 162.5% */
   }
   .emsList {
-    width: 332px;
+    width: 100%;
     color: #242424;
     font-family: Montserrat;
     font-size: 18px;
@@ -2895,7 +2905,7 @@ align-items: flex-start; */
     line-height: 30px; /* 166.667% */
   }
   .emsListItem {
-    width: 332px;
+    width: 100%;
     color: #242424;
     font-family: Montserrat;
     font-size: 16px;
