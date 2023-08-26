@@ -11,16 +11,16 @@ body {
   overflow-x: hidden;
   background: #f0edf8;
 }
-/* .opacityNav{
+.opacityNav {
   display: none;
-} */
-.boxShadow{
-   position: absolute;
+}
+.boxShadow {
+  position: absolute;
   width: 100vw;
   height: 100vh;
   background: rgba(44, 68, 85, 0.6);
   /* display: Аblock; */
-  z-index:2 ;
+  z-index: 2;
   overflow-y: hidden;
 }
 .boduHidden {
@@ -90,8 +90,7 @@ a {
   gap: 40px;
   align-items: center;
 }
-.boxShadobwBack{
-  
+.boxShadobwBack {
 }
 .circle1 {
   z-index: -1;
@@ -278,7 +277,6 @@ nav ul {
   /* padding-bottom: 50px; */
 }
 .nav ul li ul:hover > .moreList {
-
 }
 .moreList {
   /* padding-bottom: 400px; */
@@ -1167,11 +1165,11 @@ nav ul {
 .hidden {
   display: none;
 }
-.otzivi__group-flex{
+.otzivi__group-flex {
   display: flex;
   gap: 20px;
 }
-.otzivi_group_item-right img{
+.otzivi_group_item-right img {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1696,7 +1694,7 @@ nav ul {
 }
 .closeNav {
 }
-.shadowBackNav{
+.shadowBackNav {
   width: 100vw;
   height: 200vh;
   padding: 100%;
@@ -1768,24 +1766,24 @@ nav ul {
     opacity: 1;
     z-index: 4;
     } */
-   .nav ul li.openListSt:hover{
-  padding-bottom: 210px;
-}
-.nav ul li.openListSt:hover>ul.listSd{
-   display: block;
+  .nav ul li.openListSt:hover {
+    padding-bottom: 210px;
+  }
+  .nav ul li.openListSt:hover > ul.listSd {
+    display: block;
     appearance: inherit;
     opacity: 1;
     z-index: 4;
     /* left: -60px; */
     padding: 30px 0;
     margin-bottom: 0;
-}
-.nav ul li.openListSt:hover>ul.listSd li{
-  border-bottom: none;
-  padding: 4px 0;
-  width: 100%;
-  white-space: nowrap;
-}
+  }
+  .nav ul li.openListSt:hover > ul.listSd li {
+    border-bottom: none;
+    padding: 4px 0;
+    width: 100%;
+    white-space: nowrap;
+  }
   .shadowNav {
     position: absolute;
     display: none;
@@ -1995,7 +1993,7 @@ nav ul {
     width: 248.914px;
     height: 385.05px;
   }
-  .otzivi__group-flex{
+  .otzivi__group-flex {
     display: none;
   }
   .otzivi__group {
@@ -2136,8 +2134,8 @@ nav ul {
   /* .nav ul li ul:hover > {
     display: block;
     height: 399px;
-  } */ */
-  .socials {
+  } */
+  */ .socials {
     margin-left: auto;
   }
   .logo {
@@ -2628,10 +2626,22 @@ align-items: flex-start; */
   .closeWindow {
     right: 0;
   }
-  /* .opacityNav{
+  .nav {
+  }
+  .opacityNav {
     display: flex;
     flex-direction: column;
-  } */
+    position: absolute;
+    top: 700px;
+    left: 60px;
+    z-index: 30;
+  }
+  .opacityNav__geo_item {
+    padding: 8px 0;
+  }
+  .opacityNav a {
+    padding: 5px;
+  }
   #TextLabel {
     width: 309px;
   }
