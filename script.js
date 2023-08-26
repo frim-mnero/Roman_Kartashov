@@ -5,7 +5,7 @@ let backBody = document.querySelector("body");
 let shadow = document.querySelector(".shadowBlueBlock");
 let formZapic = document.querySelector(".contBlockCons");
 let closeForm = document.querySelector(".closeWindow");
-let shadowBody = document.querySelector(".shadowBackNav");
+// let shadowBody = document.querySelector(".shadowBackNav");
 
 const formBtn = document.querySelector(".title__zapicCheck");
 const formBtnPopup = document.querySelector(".btn_zapicFOrmPopUp");
@@ -82,13 +82,13 @@ burger.addEventListener("click", function () {
   // backBody.classList.add("boxShadobwBack");
   nav.classList.add("openNav");
   shadowBody.classList.add("displBlock");
-  backBody.classList.add("hiddenOver");
+  // backBody.classList.add("hiddenOver");
 });
 closeNav.addEventListener("click", function () {
   nav.classList.remove("openNav");
   // backBody.classList.remove("boxShadobwBack");
    shadowBody.classList.remove("displBlock");
-   backBody.classList.remove("hiddenOver");
+  //  backBody.classList.remove("hiddenOver");
 });
 
 function hello() {
@@ -101,16 +101,16 @@ function buy() {
   shadow.classList.remove("displBlock");
   backBody.classList.remove("hiddenOver");
 }
-if (window.devicePixelRatio !== 1) {
-  // Костыль для определения иных устройств, с коэффициентом отличным от 1
-  var dpt = window.devicePixelRatio;
-  var widthM = window.screen.width * dpt;
-  var widthH = window.screen.height * dpt;
-  document.write(
-    '<meta name="viewport" content="width=' +
-      widthM +
-      ", height=" +
-      widthH +
-      '">'
-  );
-}
+// if (window.devicePixelRatio !== 1) {
+//   // Костыль для определения иных устройств, с коэффициентом отличным от 1
+//   var dpt = window.devicePixelRatio;
+//   var widthM = window.screen.width * dpt;
+//   var widthH = window.screen.height * dpt;
+//   document.write(
+//     '<meta name="viewport" content="width=' +
+//       widthM +
+//       ", height=" +
+//       widthH +
+//       '">'
+//   );
+// }
