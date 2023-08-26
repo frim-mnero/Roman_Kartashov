@@ -11,6 +11,18 @@ body {
   overflow-x: hidden;
   background: #f0edf8;
 }
+/* .opacityNav{
+  display: none;
+} */
+.boxShadow{
+   position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(44, 68, 85, 0.6);
+  /* display: Аblock; */
+  z-index:2 ;
+  overflow-y: hidden;
+}
 .boduHidden {
   overflow: hidden;
 }
@@ -23,7 +35,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-.closeNav{
+.closeNav {
   display: none;
 }
 .container {
@@ -78,7 +90,9 @@ a {
   gap: 40px;
   align-items: center;
 }
-
+.boxShadobwBack{
+  
+}
 .circle1 {
   z-index: -1;
   position: absolute;
@@ -260,6 +274,15 @@ nav ul {
   line-height: normal;
   text-decoration-line: underline;
 }
+.nav ul li ul li:hover {
+  /* padding-bottom: 50px; */
+}
+.nav ul li ul:hover > .moreList {
+
+}
+.moreList {
+  /* padding-bottom: 400px; */
+}
 .listSd {
   flex-direction: column;
   padding: 30px;
@@ -403,7 +426,7 @@ nav ul {
 }
 .section__description {
   bottom: 142px;
-  z-index: 2;
+  z-index: 0;
   display: inline-flex;
   width: 514px;
   height: 197px;
@@ -1141,32 +1164,41 @@ nav ul {
   display: flex;
   gap: 60px;
 }
-.hidden{
+.hidden {
   display: none;
+}
+.otzivi__group-flex{
+  display: flex;
+  gap: 20px;
+}
+.otzivi_group_item-right img{
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .otzivi__group {
   margin-bottom: 50px;
-  display: flex; 
+  /* display: flex; */
+  display: none;
   /* display: block; */
   /* width: 60vw; */
   /* overflow: hidden; */
   gap: 20px;
 }
 .otzivi__group_item {
-  
-  /* width: 100%; */
+  /* width: ; */
   overflow: hidden;
   padding: 30px;
-/* display: flex; */ 
-
-/* display: block; */
+  /* display: flex; */
+  position: relative;
+  /* display: block; */
   flex-shrink: 0;
   border-radius: 15px;
   border: 1px dashed #dad4eb;
   background: #fff;
 }
 .otziv__item-title {
-  width: 540px;
+  width: 80%;
   color: #242424;
   font-family: Montserrat;
   font-size: 30px;
@@ -1664,6 +1696,15 @@ nav ul {
 }
 .closeNav {
 }
+.shadowBackNav{
+  width: 100vw;
+  height: 200vh;
+  padding: 100%;
+  position: absolute;
+  background: rgba(44, 68, 85, 0.6);
+  display: none;
+  overflow: hidden;
+}
 .shadowBlueBlock {
   width: 100%;
   height: 100%;
@@ -1700,9 +1741,6 @@ nav ul {
   z-index: 100;
 }
 
-
-
-
 @media (max-width: 1440px) {
   .container {
     width: 100%;
@@ -1730,6 +1768,24 @@ nav ul {
     opacity: 1;
     z-index: 4;
     } */
+   .nav ul li.openListSt:hover{
+  padding-bottom: 210px;
+}
+.nav ul li.openListSt:hover>ul.listSd{
+   display: block;
+    appearance: inherit;
+    opacity: 1;
+    z-index: 4;
+    /* left: -60px; */
+    padding: 30px 0;
+    margin-bottom: 0;
+}
+.nav ul li.openListSt:hover>ul.listSd li{
+  border-bottom: none;
+  padding: 4px 0;
+  width: 100%;
+  white-space: nowrap;
+}
   .shadowNav {
     position: absolute;
     display: none;
@@ -1740,7 +1796,7 @@ nav ul {
   }
   .backgroundBody {
     background: rgba(44, 68, 85, 0.6);
-    z-index: 7;
+    z-index: 50;
     overflow-y: hidden;
   }
   .hiddenOver {
@@ -1939,19 +1995,20 @@ nav ul {
     width: 248.914px;
     height: 385.05px;
   }
-  .otzivi__group{
+  .otzivi__group-flex{
+    display: none;
+  }
+  .otzivi__group {
     /* overflow: hidden; */
     display: flex;
- 
   }
   .otzivi__group_item {
     width: 100%;
-/* display: flex; */
+    /* display: flex; */
     /* display: flow-root; */
-    
   }
-  .otzivi_group_item-right img{
-   margin: 0 auto;
+  .otzivi_group_item-right img {
+    margin: 0 auto;
   }
   .otzivi_group_item-left,
   .otziv__item-title {
@@ -2023,7 +2080,7 @@ nav ul {
   *:before {
     box-sizing: border-box;
   }
-  
+
   .container {
     /* max-width: 1200px; */
     /* margin-left: 200px; */
@@ -2065,22 +2122,21 @@ nav ul {
     justify-content: flex-start;
     gap: 0;
   }
-  .moreList{
-    padding-bottom: 400px;
-  }
-  .nav ul li ul{
+
+  /* .nav ul li ul {
     display: none;
     left: -60px;
     opacity: 1;
     background: #fff;
-    height: auto;
+    /* height: auto; 
     border-radius: 0;
-    z-index: 550px;
-  }
-  
-   .nav ul li ul:hover>{
+    z-index: 550;
+  }*/
+
+  /* .nav ul li ul:hover > {
     display: block;
-   }
+    height: 399px;
+  } */ */
   .socials {
     margin-left: auto;
   }
@@ -2390,11 +2446,11 @@ nav ul {
   .otzivi__group {
     width: 100%;
     margin: 0 auto;
-    
+
     /* overflow: hidden; */
     margin-bottom: 40px;
   }
-  .otzivi_group_item-left{
+  .otzivi_group_item-left {
     width: 100%;
   }
   .otzivi__group_item {
@@ -2411,7 +2467,6 @@ nav ul {
     font-weight: 400;
     line-height: 44px; /* 146.667% */
     width: 100%;
-    
   }
   .otziv__item-pacient {
     color: #242424;
@@ -2440,13 +2495,13 @@ nav ul {
   .otziv_item-readMore:hover {
     cursor: pointer;
   }
-  .leftSlide:hover>.otzivi__group_item{
+  .leftSlide:hover > .otzivi__group_item {
     transform: translateX(100%);
   }
-  .leftAnim{
-    left:-100%;
+  .leftAnim {
+    left: -100%;
   }
-  .rightAnim{
+  .rightAnim {
     left: 100%;
   }
   .consultation__title {
@@ -2561,19 +2616,22 @@ align-items: flex-start; */
 
     overflow-x: hidden;
   }
-  .closeNav{}
-  .blockZapisConsult{
-   
-    max-width: 95vw;
-    }
-  
-  .form input{
-    max-width: 70vw;
-   
+  .closeNav {
   }
-  .closeWindow{
+  .blockZapisConsult {
+    max-width: 95vw;
+  }
+
+  .form input {
+    max-width: 70vw;
+  }
+  .closeWindow {
     right: 0;
   }
+  /* .opacityNav{
+    display: flex;
+    flex-direction: column;
+  } */
   #TextLabel {
     width: 309px;
   }
@@ -3174,5 +3232,4 @@ align-items: flex-start; */
   .footer-icons-right {
     top: 555px;
   }
-  
 }
