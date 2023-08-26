@@ -5,17 +5,16 @@ let backBody = document.querySelector("body");
 let shadow = document.querySelector(".shadowBlueBlock");
 let formZapic = document.querySelector(".contBlockCons");
 let closeForm = document.querySelector(".closeWindow");
-
+let shadowBody = document.querySelector(".shadowBackNav");
 
 const formBtn = document.querySelector(".title__zapicCheck");
 const formBtnPopup = document.querySelector(".btn_zapicFOrmPopUp");
 
-
-formBtnPopup.addEventListener("click",function(evt){
+formBtnPopup.addEventListener("click", function (evt) {
   evt.preventDefault();
 });
 
-formBtn.addEventListener("click",function(evt){
+formBtn.addEventListener("click", function (evt) {
   evt.preventDefault();
 });
 
@@ -26,8 +25,6 @@ let slider = document.querySelector(".otzivi__group");
 let sliderItem = Array.from(slider.children);
 
 sliderItem.forEach(function (slide, index) {
-  
-
   if (index != 0) {
     slide.classList.add("hidden");
   }
@@ -54,24 +51,6 @@ sliderItem.forEach(function (slide, index) {
   });
 });
 btmNext.onclick = function () {
-
-  const currentSlide = slider.querySelector("[data]");
-  const currentSlideIndex = +currentSlide.dataset.index;
-
-  currentSlide.classList.add("hidden");
-  currentSlide.removeAttribute("data");
-
-  const nextSlideIndex = currentSlideIndex + 1 === sliderItem.length ? 0 : currentSlideIndex + 1;
-  const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
-  nextSlide.classList.remove("hidden");
-  nextSlide.setAttribute("data",'')
-
-
-
-};
-
-btmPrev.onclick = function (){
-  
   const currentSlide = slider.querySelector("[data]");
   const currentSlideIndex = +currentSlide.dataset.index;
 
@@ -79,25 +58,37 @@ btmPrev.onclick = function (){
   currentSlide.removeAttribute("data");
 
   const nextSlideIndex =
-    currentSlideIndex ===0? sliderItem.length -1 : currentSlideIndex - 1;
+    currentSlideIndex + 1 === sliderItem.length ? 0 : currentSlideIndex + 1;
   const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
   nextSlide.classList.remove("hidden");
   nextSlide.setAttribute("data", "");
+};
 
-}
+btmPrev.onclick = function () {
+  const currentSlide = slider.querySelector("[data]");
+  const currentSlideIndex = +currentSlide.dataset.index;
 
+  currentSlide.classList.add("hidden");
+  currentSlide.removeAttribute("data");
 
-
+  const nextSlideIndex =
+    currentSlideIndex === 0 ? sliderItem.length - 1 : currentSlideIndex - 1;
+  const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
+  nextSlide.classList.remove("hidden");
+  nextSlide.setAttribute("data", "");
+};
 
 burger.addEventListener("click", function () {
-  backBody.classList.add("backgroundBody");
+  // backBody.classList.add("boxShadobwBack");
   nav.classList.add("openNav");
-  // backBody.classList.add("boduHidden");
+  shadowBody.classList.add("displBlock");
+  backBody.classList.add("hiddenOver");
 });
 closeNav.addEventListener("click", function () {
   nav.classList.remove("openNav");
-  backBody.classList.remove("backgroundBody");
-  //  backBody.classList.remove("boduHidden");
+  // backBody.classList.remove("boxShadobwBack");
+   shadowBody.classList.remove("displBlock");
+   backBody.classList.remove("hiddenOver");
 });
 
 function hello() {
