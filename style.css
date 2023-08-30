@@ -1225,6 +1225,7 @@ nav ul {
   height: 103px;
 }
 .otziv_item-readMore {
+  position: relative;
   background-color: inherit;
   border: none;
   text-decoration: underline;
@@ -1237,6 +1238,11 @@ nav ul {
   text-decoration-line: underline;
   display: inline-block;
   align-self: flex-start;
+}
+.otziv_item-readMore img{
+  position: absolute;
+  top: 0;
+  right: -26px;
 }
 .servZap {
   margin-top: 16px;
@@ -1566,7 +1572,8 @@ nav ul {
   position: absolute;
   top: 277px;
   right: 116px;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
 }
 .tabletPhone {
   padding: 8px;
@@ -2490,6 +2497,11 @@ nav ul {
   .otziv_item-readMore {
     z-index: 3;
   }
+  .otziv_item-readMore img{
+  position: absolute;
+  top: 0;
+  right: -26px;
+}
   .otziv_item-readMore:hover {
     cursor: pointer;
   }
@@ -2560,6 +2572,7 @@ nav ul {
     line-height: normal;
     letter-spacing: 3.9px;
     text-transform: uppercase;
+    white-space: nowrap;
   }
   .logo-descriptionFooter {
     color: #fff;
@@ -2602,9 +2615,11 @@ align-items: flex-start; */
 @media (max-width: 767px) {
   .circle2-bazalioma,
   .circle2,
-  .circle3 {
+  .circle3,
+  .frames {
     display: none;
   }
+  
   .hiddenOver {
     overflow: hidden;
   }
@@ -2614,10 +2629,13 @@ align-items: flex-start; */
 
     overflow-x: hidden;
   }
-  .closeNav {
-  }
+ 
+.otziv_item-readMore{
+  display: flex;
+}
   .blockZapisConsult {
     max-width: 95vw;
+    max-height: 90vh;
   }
 
   .form input {
@@ -3066,6 +3084,7 @@ align-items: flex-start; */
     line-height: 26px; /* 162.5% */
   }
   .btnOtz {
+    display: block;
     width: 296px;
     color: #fff;
     font-family: Montserrat;
