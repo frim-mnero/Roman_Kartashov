@@ -3261,6 +3261,6 @@ align-items: flex-start; */
   }
   .footer-icons-right {
     top: 500px;
-    /* right: 100px; */
+    right: 20px;
   }
 }
