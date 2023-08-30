@@ -1,16 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+button:hover {
+  cursor: pointer;
+}
+[type="submit"]:hover{
+  cursor: pointer;
+}
+.otziv_item-readMore img {
+}
 
+.footer__cont {
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .zapBlock {
-    display: block;
-    position: absolute;
-    z-index: -1;
+  display: block;
+  position: absolute;
+  z-index: -1;
 }
 .circleBlock {
   display: none;
@@ -18,6 +28,9 @@
 body {
   overflow-x: hidden;
   background: #f0edf8;
+  border: 1px solid red;
+  height: 100%;
+  
 }
 .opacityNav {
   display: none;
@@ -1286,7 +1299,7 @@ nav ul {
 }
 .otziv_item-readMore img {
   position: absolute;
-  top: 12px;
+  top: 3px;
   right: -26px;
 }
 .servZap {
@@ -1400,11 +1413,32 @@ nav ul {
   text-decoration-line: underline;
 }
 .realCheckbox {
+  /* position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: -1; */
+  width: 24px;
+  height: 24px;
+
+}
+.check2{
   position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
   z-index: -1;
+}
+.realCheckbox::before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./img/iconamoon_arrow-up-2-light.png);
+  background-size: contain;
+  transform: scale(0);
+  transition: 0.2s all;
 }
 .customCheckbox {
   width: 30px;
@@ -1417,6 +1451,20 @@ nav ul {
   align-items: center;
   justify-content: center;
   transition: 0.2s all;
+}
+.customCheckbox:active{
+  background-color: #fff;
+}
+.customActive{
+    position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./img/iconamoon_arrow-up-2-light.png);
+  background-size: contain;
+  transform: scale(0);
+  transition: 0.2s all;
+  background-color: red;
 }
 .customCheckbox::before {
   content: "";
@@ -1531,12 +1579,12 @@ nav ul {
 }
 .footer {
   background-color: #669abd;
-  position: relative;
+  /* position: relative; */
 }
 .footerBackBlock {
   position: absolute;
   width: 398.246px;
-  height: 505.219px;
+  height: 300.219px;
   transform: rotate(143.518deg);
   flex-shrink: 0;
   border-radius: 505.219px;
@@ -1546,6 +1594,7 @@ nav ul {
     rgba(255, 255, 255, 0) 100%
   );
   right: 60%;
+  bottom: 0;
 }
 .footer-logo {
   display: flex;
@@ -1647,7 +1696,9 @@ nav ul {
   flex-direction: column;
   row-gap: 10px;
   position: absolute;
-  top: 277px;
+  /* top: 100vh; */
+  bottom: 150px;
+  right: 5%;
   right: 116px;
   position: fixed;
   z-index: 100;
@@ -1829,7 +1880,12 @@ nav ul {
     padding: 0 60px;
     margin: 0 auto;
   }
-
+  .emsCircle1 {
+    z-index: -1;
+  }
+  .emsCircle2 {
+    z-index: -1;
+  }
   .header__down {
     justify-content: flex-start;
   }
@@ -2109,8 +2165,8 @@ nav ul {
   }
 
   .footer-icons-right {
-    top: 269px;
-    right: 30px;
+    bottom: 0;
+    right: 5%;
   }
   .footer {
     padding-top: 83px;
@@ -2119,6 +2175,9 @@ nav ul {
   .footer-right_nav ul {
     position: absolute;
     right: 196px;
+  }
+  .footer {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 1119px) {
@@ -3347,7 +3406,7 @@ align-items: flex-start; */
     left: 22px;
   }
   .footer-icons-right {
-    top: 500px;
-    right: 20px;
+    bottom: 0;
+    right: 5%;
   }
 }
