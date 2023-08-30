@@ -7,8 +7,12 @@ let formZapic = document.querySelector(".contBlockCons");
 let closeForm = document.querySelector(".closeWindow");
 let shadowBody = document.querySelector(".shadowBackNav");
 
+const _Sustom = document.querySelector(".customCheckbox");
+
 const formBtn = document.querySelector(".title__zapicCheck");
 const formBtnPopup = document.querySelector(".btn_zapicFOrmPopUp");
+
+
 
 formBtnPopup.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -87,8 +91,8 @@ burger.addEventListener("click", function () {
 closeNav.addEventListener("click", function () {
   nav.classList.remove("openNav");
   backBody.classList.remove("boxShadobwBack");
-   shadowBody.classList.remove("displBlock");
-   backBody.classList.remove("hiddenOver");
+  shadowBody.classList.remove("displBlock");
+  backBody.classList.remove("hiddenOver");
 });
 
 function hello() {
@@ -101,4 +105,3 @@ function buy() {
   shadow.classList.remove("displBlock");
   backBody.classList.remove("hiddenOver");
 }
-
