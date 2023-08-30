@@ -4,7 +4,7 @@
 button:hover {
   cursor: pointer;
 }
-[type="submit"]:hover{
+[type="submit"]:hover {
   cursor: pointer;
 }
 .otziv_item-readMore img {
@@ -29,7 +29,6 @@ body {
   overflow-x: hidden;
   background: #f0edf8;
   height: 100%;
-  
 }
 .opacityNav {
   display: none;
@@ -1419,16 +1418,15 @@ nav ul {
   z-index: -1; */
   width: 24px;
   height: 24px;
-
 }
-.check2{
+.check2 {
   position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
   z-index: -1;
 }
-.realCheckbox::before{
+.realCheckbox::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -1451,11 +1449,11 @@ nav ul {
   justify-content: center;
   transition: 0.2s all;
 }
-.customCheckbox:active{
+.customCheckbox:active {
   background-color: #fff;
 }
-.customActive{
-    position: absolute;
+.customActive {
+  position: absolute;
   display: inline-block;
   width: 24px;
   height: 24px;
