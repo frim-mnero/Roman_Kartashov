@@ -8,7 +8,9 @@
   box-sizing: border-box;
 }
 .zapBlock {
-  display: none;
+    display: block;
+    position: absolute;
+    z-index: -1;
 }
 .circleBlock {
   display: none;
