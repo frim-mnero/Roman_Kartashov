@@ -7,6 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+.zapBlock {
+  display: none;
+}
+.circleBlock {
+  display: none;
+}
 body {
   overflow-x: hidden;
   background: #f0edf8;
@@ -524,9 +530,10 @@ nav ul {
 }
 .zap {
   position: absolute;
-  z-index: 0;
+  /* z-index: 0; */
   opacity: 0.6;
   top: 53.4px;
+  z-index: 2;
 }
 
 .information {
@@ -917,12 +924,16 @@ nav ul {
   right: -120px;
   top: 150px;
   z-index: -1;
-  width: 380.557px;
-  height: 641.749px;
-  transform: rotate(-122.764deg);
+  width: 325.813px;
+  height: 422.357px;
+  transform: rotate(144.108deg);
   flex-shrink: 0;
-  border-radius: 641.749px;
-  border: 1px dashed #dad4eb;
+  border-radius: 422.357px;
+  background: linear-gradient(
+    198deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.28) 100%
+  );
 }
 .Services__title {
   color: #2c4455;
@@ -1130,6 +1141,22 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.emsBackBlock {
+  position: absolute;
+  width: 294.714px;
+  height: 389.501px;
+  transform: rotate(144.632deg);
+  flex-shrink: 0;
+  border-radius: 389.501px;
+  background: linear-gradient(
+    198deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.28) 100%
+  );
+  z-index: 2;
 }
 .arrowsEms {
   align-self: flex-end;
@@ -1146,6 +1173,22 @@ nav ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+.otziviBlockBack {
+  position: absolute;
+  width: 318.291px;
+  height: 403.787px;
+  transform: rotate(143.518deg);
+  flex-shrink: 0;
+  border-radius: 403.787px;
+  background: linear-gradient(
+    198deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.21) 100%
+  );
+  left: 50%;
+  z-index: -1;
 }
 .otzivi__title {
   margin-top: 80px;
@@ -1239,9 +1282,9 @@ nav ul {
   display: inline-block;
   align-self: flex-start;
 }
-.otziv_item-readMore img{
+.otziv_item-readMore img {
   position: absolute;
-  top: 0;
+  top: 12px;
   right: -26px;
 }
 .servZap {
@@ -1257,6 +1300,23 @@ nav ul {
   display: flex;
   background-color: #fff;
   justify-content: center;
+  position: relative;
+}
+
+.consultatonBackBlock {
+  position: absolute;
+  width: 540.097px;
+  height: 685.172px;
+  transform: rotate(-145.173deg);
+  flex-shrink: 0;
+  border-radius: 685.172px;
+  background: linear-gradient(
+    198deg,
+    rgba(240, 237, 248, 0.7) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: -1;
+  left: 50%;
 }
 .consultation__title {
   color: #2c4455;
@@ -1268,6 +1328,7 @@ nav ul {
   margin-top: 78px;
   margin-bottom: 30px;
   text-align: center;
+  z-index: 10;
 }
 .consultation__text {
   color: #242424;
@@ -1469,6 +1530,20 @@ nav ul {
 .footer {
   background-color: #669abd;
   position: relative;
+}
+.footerBackBlock {
+  position: absolute;
+  width: 398.246px;
+  height: 505.219px;
+  transform: rotate(143.518deg);
+  flex-shrink: 0;
+  border-radius: 505.219px;
+  background: linear-gradient(
+    198deg,
+    rgba(235, 249, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  right: 60%;
 }
 .footer-logo {
   display: flex;
@@ -2497,11 +2572,11 @@ nav ul {
   .otziv_item-readMore {
     z-index: 3;
   }
-  .otziv_item-readMore img{
-  position: absolute;
-  top: 0;
-  right: -26px;
-}
+  .otziv_item-readMore img {
+    position: absolute;
+    top: 3px;
+    right: -26px;
+  }
   .otziv_item-readMore:hover {
     cursor: pointer;
   }
@@ -2613,13 +2688,19 @@ align-items: flex-start; */
   }
 }
 @media (max-width: 767px) {
+  .zapBlock {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
+
   .circle2-bazalioma,
   .circle2,
   .circle3,
   .frames {
     display: none;
   }
-  
+
   .hiddenOver {
     overflow: hidden;
   }
@@ -2629,10 +2710,10 @@ align-items: flex-start; */
 
     overflow-x: hidden;
   }
- 
-.otziv_item-readMore{
-  display: flex;
-}
+
+  .otziv_item-readMore {
+    display: flex;
+  }
   .blockZapisConsult {
     max-width: 95vw;
     max-height: 95vh;
@@ -2681,16 +2762,16 @@ align-items: flex-start; */
   }
 
   .mohc-frame1 {
-    z-index: -1;
+    display: none;
   }
-  .circle1,
+  /* .circle1,
   .Services-circle1,
   .Services-circle2,
   .mohc-circle1,
   .plan-circle1,
   .plan-circle2 {
     display: none;
-  }
+  } */
 
   .emsGroup-left {
     max-width: 100%;
@@ -3172,6 +3253,10 @@ align-items: flex-start; */
   }
   .arrowsOtz {
     margin-bottom: 50px;
+  }
+  .arDown {
+    position: relative;
+    top: 10px;
   }
   .consultation {
     padding-bottom: 620px;
