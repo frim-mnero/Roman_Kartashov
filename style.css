@@ -2635,13 +2635,14 @@ align-items: flex-start; */
 }
   .blockZapisConsult {
     max-width: 95vw;
-    max-height: 90vh;
+    max-height: 95vh;
   }
 
   .form input {
     max-width: 70vw;
   }
   .closeWindow {
+    top: 0;
     right: 0;
   }
   .nav {
@@ -3259,6 +3260,6 @@ align-items: flex-start; */
     left: 22px;
   }
   .footer-icons-right {
-    top: 555px;
+    top: 500px;
   }
 }
