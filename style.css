@@ -159,7 +159,7 @@ a {
   height: 656.853px;
   transform: rotate(-136.511deg);
   flex-shrink: 0;
-  border-radius: 656.853px;
+  border-radius: 50%;
   background: linear-gradient(
     198deg,
     rgba(255, 255, 255, 0.6) 0%,
@@ -663,11 +663,11 @@ input[type="submit"] {
   line-height: 30px;
 }
 .bazalioma {
-  padding-top: 114px;
+  /* padding-top: 114px; */
   background: #fff;
   margin-bottom: 102px;
   position: relative;
-  z-index: 100;
+  z-index:0;
 }
 .bazaliomaTitle {
   color: #2c4455;
@@ -1316,18 +1316,35 @@ input[type="submit"] {
 }
 .otziviBlockBack {
   position: absolute;
-  width: 318.291px;
-  height: 403.787px;
+  width: 517.775px;
+  height: 656.853px;
   transform: rotate(143.518deg);
   flex-shrink: 0;
-  border-radius: 403.787px;
+  border-radius: 50%;
   background: linear-gradient(
     198deg,
-    rgba(255, 255, 255, 0.6) 0%,
-    rgba(255, 255, 255, 0.21) 100%
+    rgba(255, 255, 255, 0.6) 12.02%,
+    rgba(255, 255, 255, 0.21) 100.28%
   );
-  left: 50%;
+  right: -50px;
+  top: 50px;
   z-index: -1;
+}
+.otziviBlockBack2 {
+  position: absolute;
+  width: 361.1px;
+  height: 626.714px;
+  transform: rotate(-123.519deg);
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px dashed #dad4eb;
+  right: 0;
+  top: 70px;
+}
+.otziviFrames{
+  position: absolute;
+  top:172px;
+  left: 0;
 }
 .otzivi__title {
   margin-top: 80px;
@@ -1891,6 +1908,7 @@ input[type="submit"] {
   gap: 30px;
   border-radius: 25px;
   background: #fff;
+  z-index: 121212112;
 }
 
 .backgroundDark {
@@ -1966,11 +1984,12 @@ input[type="submit"] {
   position: absolute;
   background: rgba(44, 68, 85, 0.6);
   display: none;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .displBlock {
   display: block;
   z-index: -1;
+  overflow-y: hidden;
 }
 .allServBtnOpac {
   display: none;
