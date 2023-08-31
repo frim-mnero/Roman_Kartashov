@@ -454,6 +454,9 @@ nav ul {
   font-weight: 600;
   line-height: normal;
 }
+input[type="submit"]{
+  border: none;
+}
 .title__zapic::after {
   content: url(./img/iconoir_arrow-tr.svg);
 }
