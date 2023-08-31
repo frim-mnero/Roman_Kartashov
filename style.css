@@ -7,8 +7,33 @@ button:hover {
 [type="submit"]:hover {
   cursor: pointer;
 }
-.otziv_item-readMore img {
+.circle2-bazalioma{
+  z-index: 0;
 }
+
+.emsCircle1{
+  z-index: 0;
+}
+.EMS{
+  z-index: 100;
+}
+ .head-title-left,
+  .head-title-right {
+    margin-top: 100px;
+    z-index: 1000;
+  }
+  .head-title-left p{
+    z-index: 1000;
+  }
+  .OperacTitle {
+    z-index: 2000;
+  }
+  .OperacDescription{
+    z-index: 2000;
+  }
+  .bazaliomaOperac{
+    z-index: 2000;
+  }
 
 .footer__cont {
 }
@@ -53,6 +78,7 @@ a {
 .header {
   display: flex;
   flex-direction: column;
+  border-bottom: 1px dashed #DAD4EB;
 }
 .closeNav {
   display: none;
@@ -164,7 +190,7 @@ a {
   position: absolute;
   left: -100px;
   top: 0px;
-  z-index: 0;
+  z-index: -1;
   width: 540.097px;
   height: 685.172px;
   transform: rotate(-145.173deg);
@@ -265,6 +291,7 @@ a {
 .nav {
   display: flex;
   align-items: center;
+
 }
 nav ul {
   display: flex;
@@ -605,6 +632,7 @@ nav ul {
   background: #fff;
   margin-bottom: 102px;
   position: relative;
+  z-index: 100;
 }
 .bazaliomaTitle {
   color: #2c4455;
@@ -680,6 +708,7 @@ nav ul {
   border-radius: 15px;
   border: 1px dashed #dad4eb;
   background: #fff;
+  z-index: 10000;
 }
 .bazaliomaServices {
   display: flex;
@@ -1082,6 +1111,9 @@ nav ul {
   justify-content: center;
   position: relative;
 }
+.emsCircle2{
+  z-index: -1;
+}
 .emsTitle {
   margin-top: 108px;
   margin-bottom: 57px;
@@ -1092,6 +1124,7 @@ nav ul {
   font-style: normal;
   font-weight: 400;
   line-height: 86px; /* 122.857% */
+  z-index: 1000;
 }
 .emsText {
   color: #242424;
@@ -1412,7 +1445,7 @@ nav ul {
 }
 .realCheckbox {
   /* position: absolute;
-  width: 0;
+  width: 0;head-title-left
   height: 0;
   opacity: 0;
   z-index: -1; */
@@ -1721,7 +1754,7 @@ width: 10px;height: 10px;
   position: absolute;
   bottom: 320px;
   right: 300px;
-  z-index: 0;
+  z-index: -1;
   width: 532.147px;
   height: 689.832px;
   transform: rotate(144.108deg);
@@ -2044,6 +2077,10 @@ width: 10px;height: 10px;
   .head-title-left,
   .head-title-right {
     margin-top: 100px;
+    z-index: 1000;
+  }
+  .head-title-left p{
+    z-index: 1000;
   }
   .bazaliomaServices_item {
     width: 348px;
