@@ -12,7 +12,7 @@ button:hover {
 .circle2-bazalioma {
   z-index: 0;
 }
-.arrowsOtz{
+.arrowsOtz {
   margin-bottom: 50px;
 }
 .emsCircle1 {
@@ -1171,7 +1171,7 @@ input[type="submit"] {
   z-index: 22;
 }
 
-.frames-footer{
+.frames-footer {
   position: absolute;
   /* top: 84px; */
   right: 251px;
@@ -3438,6 +3438,7 @@ align-items: flex-start; */
   }
   .arrowsOtz {
     margin-bottom: 50px;
+    margin-top: 50px;
   }
   .arDown {
     position: relative;
