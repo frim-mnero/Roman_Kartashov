@@ -1,244 +1,802 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Базалиома</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="bazalioma.css" />
-  </head>
-  <body>
-    <div class="contBlockCons">
-      <div class="shadowBlueBlock"></div>
-      <div class="blockZapisConsult">
-        <p class="blockZapicConsult_title">Записаться на консультацию</p>
-        <form action="" class="form formes">
-          <label for="name">
-            Ваше имя
-            <input type="text" id="name" />
-          </label>
-          <label for="tel">
-            Телефон
-            <input type="number" id="tel" />
-          </label>
-          <label for="time">
-            Удобное для зконка время:
-            <input type="time" id="time" />
-          </label>
-          <div class="soglGroup">
-            <input type="checkbox" id="soglCheck" class="realCheckbox" />
-            <span class="customCheckbox"></span>
-            <label class="soglashenieText" for="soglCheck"
-              >Принимаю условия
-              <a href="#">пользовательского соглашения</a></label
-            >
-          </div>
-          <input
-            type="submit"
-            value="Отправить"
-            class="title__zapic btn_zapicFOrmPopUp"
-          />
-        </form>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no,shrink-to-fit=no">
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+        rel="stylesheet"
+      />
+      <link rel="icon" href="./img/favicon.svg" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Главная</title>
+    </head>
+    <body>
+    
+      <div class="contBlockCons">
+        <div class="shadowBlueBlock"></div>
+        <div class="blockZapisConsult">
+          <p class="blockZapicConsult_title" >Записаться на консультацию</p>
+          <form action="" class=" form formes">
+            <label for="name">
+              Ваше имя
+              <input type="text" id="name">
+            </label>
+            <label for="tel">
+              Телефон
+              <input type="number" id="tel">
+            </label>
+            <label for="time">
+              Удобное для зконка время:
+              <input type="time" id="time">
+            </label>
+            <div class="soglGroup">
+                  <input type="checkbox" id="soglCheck" class="realCheckbox ">
+                  <!-- <span class="customCheckbox" onclick="clickers()" ></span> -->
+                  <label  class="soglashenieText" for="soglCheck">Принимаю условия <a href="#">пользовательского соглашения</a></label>
+                </div>
+                <input type="submit" value="Отправить" class="title__zapic btn_zapicFOrmPopUp">
+          </form>    
+        
       </div>
-      <button class="closeWindow" onclick="buy()">
-        <img src="./img/ic_round-close.png" alt="" />
-      </button>
-    </div>
-    <header class="header container">
-      <div class="circle1"></div>
-      <div class="circle2"></div>
-      <div class="circle3"></div>
-      <div class="frames"><img src="./img/Frame 4.svg" alt="" /></div>
-      <div class="header__up">
-        <div class="headerUpLeft">
-          <p class="header-adres">г. Москва, ул. Щепкина, 35</p>
-          <p class="header-metro">пр-т Мира</p>
-        </div>
-        <div class="headerUpRight">
-          <div class="langs">
-            <button class="langs_item ru active">RU</button>
-            <button class="langs_item en">EN</button>
-          </div>
-          <p class="header-number">+7 (123) 456-78-91</p>
-        </div>
+      <button class="closeWindow"  onclick="buy()"><img src="./img/ic_round-close.png" alt=""></button>
       </div>
-      <div class="header__down">
-        <button class="burger">
-          <img src="./img/ri_menu-2-fill.png" alt="" />
-        </button>
-        <a href="" class="logo">
-          <img src="./img/logo.svg" alt="" class="logo-img" />
-          <div class="logo-grpoup">
-            <p class="logo-name">Роман Карташов</p>
-            <p class="logo-description">
+      
+
+
+      <header class="header container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+        <div class="frames"><img src="./img/Frame 4.svg" alt=""></div>
+        <div class="header__up">
+          <div class="headerUpLeft">
+            <p class="header-adres">г. Москва, ул. Щепкина, 35</p>
+            <p class="header-metro">пр-т Мира</p>
+          </div>
+          <div class="headerUpRight">
+            <div class="langs">
+              <button class="langs_item ru active">RU</button>
+              <button class="langs_item en">EN</button>
+            </div>
+            <p class="header-number">+7 (123) 456-78-91</p>
+          </div>
+        </div>
+        <div class="header__down">
+          
+          <button class="burger"><img src="./img/ri_menu-2-fill.png" alt=""></button>
+          <a href="" class="logo">
+            <img src="./img/logo.svg" alt="" class="logo-img" />
+            <div class="logo-grpoup">
+              <p class="logo-name">Роман Карташов</p>
+              <p class="logo-description">
+                пластический и челюстно-лицевой хирург
+              </p>
+            </div>
+          </a>
+          <nav class="nav">
+            <div class="shadowBackNav"></div>
+            <button class="closeNav"><img src="./img/ic_round-closeBlue.png" alt="dfa"></button>
+            <ul>
+              <li>
+                <a class="linkNav" href="#"> Главная </a>
+              </li>
+
+              <li>
+                <a  class="linkNav" href="./bazalioma.html"> Базалиома и ее лечение </a>
+              </li>
+
+              <li>
+                <a class="linkNav" href="#"> Специалист </a>
+              </li>
+
+              <li class="openListSt" >
+                
+                <a class="linkNav moreList" href="#"> Услуги </a>
+                <ul class="listSd">
+                  
+                  <li><a class="secondList"  href="#">Консультация</a></li>
+                  <li><a class="secondList" href="#">Биопсия</a></li>
+                  <li><a class="secondList"  href="#">Удаление базалиомы на носу</a></li>
+                  <li><a class="secondList"  href="#">Удаление базалиомы на веке</a></li>
+                  <li><a class="secondList"  href="#">Удаление базалиомы на лице</a></li>
+                  <li><a class="secondList"  href="#">Базалиома у женщин</a></li>
+                  <li><a class="secondList"  href="#">Базалиома у мужчин</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a class="linkNav" href="#"> Фото работ </a>
+              </li>
+
+              <li>
+                <a class="linkNav" href="#"> Контакты </a>
+              </li>
+            </ul>
+            <div class="opacityNav">
+              <div class="opacityNav__geo">
+                <div class="opacityNav__geo_item"><p class="header-adres">г. Москва, ул. Щепкина, 35</p></div>
+                <div class="opacityNav__geo_item"><p class="header-metro">пр-т Мира</p></div>
+              </div>
+              <div class="socials-opac">
+            <a href="#"><img src="./img/whatsup.svg" alt="" /></a>
+            <a href="#"><img src="./img/telegram.svg" alt="" /></a>
+            <a href="#"><img src="./img/inst.svg" alt="" /></a>
+          </div>
+            </div>
+          </nav>
+          <!-- <div class="boxShadobwBack"></div> -->
+          <div class="socials">
+            <a href="#"><img src="./img/whatsup.svg" alt="" /></a>
+            <a href="#"><img src="./img/telegram.svg" alt="" /></a>
+            <a href="#"><img src="./img/inst.svg" alt="" /></a>
+          </div>
+        </div>
+      </header>
+      <section class="section__title container">
+        <div class="section__title_left">
+          <h1 class="section__title_head">Столкнулись с раком кожи?</h1>
+          <p class="section__title_item">
+            Доктор <span>РОМАН КАРТАШОВ </span> лечит БАЗАЛИОМУ (рак кожи) по
+            методу микрографической хирургии Моса (МОНS)!
+          </p>
+          <p class="section__title_item">
+            У нас есть всё для того, чтобы Вам помочь:
+          </p>
+          <div class="title__services">
+            <div class=" title__services_item ">
+              <img src="./img/healthicons_doctor-male.svg" alt="" />
+              <p>Высококвалифицированный специалист</p>
+            </div>
+            <div class="title__services_item">
+              <img
+                src="./img/5041102_cardiogram_health_healthcare_medic_medical_icon 1.svg"
+                alt=""
+              />
+              <p>Современное оборудование мирового уровня</p>
+            </div>
+            <div class="title__services_item">
+              <img src="./img/solar_hospital-outline.svg" alt="" />
+              <p>Лаборатория, операционная и стационар</p>
+            </div>
+            <div class="title__services_item">
+              <img src="./img/teenyicons_certificate-outline.svg" alt="" />
+              <p>И самое главное – опыт!</p>
+            </div>
+          <button class="title__zapic frstzp" onclick="hello()">Записаться на консультацию</button>
+          </div>
+          
+        </div>
+        <div class="section__title_right">
+          <div class="section__description">
+            <p class="description-citata">
+              «Решение проблемы рака кожи берём на себя! Мы сделаем всё. И даже
+              больше!»
+            </p>
+            <p class="description-name">Роман Карташов</p>
+            <p class="description-vacation">
               пластический и челюстно-лицевой хирург
             </p>
           </div>
-        </a>
-        <nav class="nav">
-          <div class="shadowBackNav"></div>
-          <button class="closeNav">
-            <img src="./img/ic_round-closeBlue.png" alt="dfa" />
-          </button>
-          <ul>
-            <li>
-              <a class="linkNav" href="index.html"> Главная </a>
-            </li>
-
-            <li>
-              <a class="linkNav" href="#"> Базалиома и ее лечение </a>
-            </li>
-
-            <li>
-              <a class="linkNav" href="#"> Специалист </a>
-            </li>
-
-            <li class="openListSt">
-              <a class="linkNav moreList" href="#"> Услуги </a>
-              <ul class="listSd">
-                <li><a class="secondList" href="#">Консультация</a></li>
-                <li><a class="secondList" href="#">Биопсия</a></li>
-                <li>
-                  <a class="secondList" href="#">Удаление базалиомы на носу</a>
-                </li>
-                <li>
-                  <a class="secondList" href="#">Удаление базалиомы на веке</a>
-                </li>
-                <li>
-                  <a class="secondList" href="#">Удаление базалиомы на лице</a>
-                </li>
-                <li><a class="secondList" href="#">Базалиома у женщин</a></li>
-                <li><a class="secondList" href="#">Базалиома у мужчин</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a class="linkNav" href="#"> Фото работ </a>
-            </li>
-
-            <li>
-              <a class="linkNav" href="#"> Контакты </a>
-            </li>
-          </ul>
-          <div class="opacityNav">
-            <div class="opacityNav__geo">
-              <div class="opacityNav__geo_item">
-                <p class="header-adres">г. Москва, ул. Щепкина, 35</p>
-              </div>
-              <div class="opacityNav__geo_item">
-                <p class="header-metro">пр-т Мира</p>
-              </div>
-            </div>
-            <div class="socials-opac">
-              <a href="#"><img src="./img/whatsup.svg" alt="" /></a>
-              <a href="#"><img src="./img/telegram.svg" alt="" /></a>
-              <a href="#"><img src="./img/inst.svg" alt="" /></a>
-            </div>
-          </div>
-        </nav>
-        <!-- <div class="boxShadobwBack"></div> -->
-        <div class="socials">
-          <a href="#"><img src="./img/whatsup.svg" alt="" /></a>
-          <a href="#"><img src="./img/telegram.svg" alt="" /></a>
-          <a href="#"><img src="./img/inst.svg" alt="" /></a>
+            <img class="photoDoctor" src="./img/doctor_2 4.svg" alt="фото доктора" />
         </div>
-      </div>
-    </header>
-    <section class="bazaliomaMain container">
-      <div class="  bazalioma-left">
-        <h2 class="bazalioma-MainTitle">Базалиома и её лечение</h2>
-        <h4 class="bazalioma-MainPreTitle">Что такое БАЗАЛИОМА?</h4>
-        <div class="bazalioma-MainGroupDescription">
-          <p class="bazalioma-descriptionItem">
-            <span>БАЗАЛИОМА</span> - злокачественное новообразование кожи,
-            которое развивается из атипичных клеток базального слоя эпидермиса.
+      
+      </section>
+      <section class="zapis container">
+        <div class="info">
+          <img class="zap" src="..//romankartashov/img/Page-1.svg" alt="" />
+          <div class="zapBlock"><img src="./img/Page-1.svg" alt=""></div>
+          <p class="infomain">
+            В России злокачественные образования кожи (кроме меланомы) у женщин
+            составляют 13%. У мужчин 10%. <br>
+            Это каждая 8ая женщина и каждый 10ый мужчина!
           </p>
-          <p class="bazalioma-descriptionItem">
-            Это самая распространённая разновидность рака кожи. Почему
-            развивается рак, в частности на коже, точно сказать нельзя.
-            Известно, что преобразование клетки из доброкачественной в
-            злокачественную происходит в результате ряда нарушений в её геноме.
-          </p>
+          
+          <p class="infopometka">*по данным Минздрава за 2021 год</p>
+          <p class="info__visit">Не откладывайте свой визит к врачу!</p>
+          <button class="title__zapic firstZapic" onclick="hello()">Записаться на консультацию</button>
         </div>
-        <button class="title__zapic frstzp" onclick="hello()">
-          Записаться на консультацию
-        </button>
-      </div>
-      <div class="bazalioma-right">
-        <div class="containerImgBazalioma">
-          <img src="./bazaliomaIMG/bazaliomaMainImg.svg" alt="" />
-          <div class="containerImgBazaliomaDesc">
-            Базалиома в объективе микроскопа
-          </div>
-        </div>
-      </div>
-    </section>
-    <sectiom class="factorsRiskCont">
-      <div class="factorsRisk container">
-        <h2 class="factorsRiskTitle">
-          Факторы, оказывающие влияние на развитие рака кожи:
-        </h2>
-        <div class="factorsRiskGroup">
-          <div class="factorsRiskGroup-item">
-            <div class="factorsRiskGroup-item--left">
-              <img src="./bazaliomaIMG/factors/bi_sun.svg" alt="" />
+      </section>
+
+      <section class="bazaliomaBlock">
+        <section class="bazalioma container">
+          <div class="circle1-bazalioma"></div>
+          <div class="circle2-bazalioma"></div>
+
+          <div class="head-title">
+            <div class="head-title-left">
+              <p class="bazaliomaTitle">Базалиома -</p>
+              <p class="bazaliomaDescription">
+                злокачественное новообразование кожи
+              </p>
             </div>
-            <div class="factorsRiskGroup-item--right">
-              <p class="RiskTitle">Ультрафиолет</p>
-              <p class="RiskDescription">
-                Длительное воздействие солнечных лучей увеличивает риск развития
-                базалиомы. Важно: Искусственный ультрафиолетовый свет опасен для
-                кожи так же, как и прямые солнечные лучи!
+            <div class="head-title-right">
+              <p class="bazaliomaText">
+                Микрографическая хирургия Моса (МОНS) является «золотым
+                стандартом» в лечении базальноклеточного и плоскоклеточного рака
+                кожи.
+              </p>
+              <p class="bazaliomaText">
+                Метод позволяет
+                <span>полностью удалить злокачественную опухоль,</span>
+                максимально сохраняя при этом здоровые ткани вокруг.
               </p>
             </div>
           </div>
-          <div class="factorsRiskGroup-item">
-            <div class="factorsRiskGroup-item--left">
-              <img src="./bazaliomaIMG/factors/5929107_bacteria_health_infection_medical_virus_icon 1.svg" alt="" />
-            </div>
-            <div class="factorsRiskGroup-item--right">
-              <p class="RiskTitle">Сниженный иммунитет</p>
-              <p class="RiskDescription">Раку кожи подвержены люди, перенёсшие пересадку органов или другие сложные вмешательства в иммунную систему.</p>
-            </div>
-          </div>
-          <div class="factorsRiskGroup-item">
-            <div class="factorsRiskGroup-item--left">
-              <img src="./bazaliomaIMG/factors/emojione-monotone_old-man.svg" alt="" />
-            </div>
-            <div class="factorsRiskGroup-item--right">
-              <p class="RiskTitle">Возраст</p>
-              <p class="RiskDescription">Чем старше становится человек, тем выше вероятность развития рака кожи. Это связано с тем, что для возникновения мутации в генах имеет значение суммарная накопленная доза УФ-облучения.</p>
+          <div class="bazaliomaOperac">
+            <div class="OperacTitle">Микрографическая хирургия Моса (МОНS)</div>
+            <div class="OperacDescription">
+              Операция Моса (МОНS) - это точная хирургическая техника,
+              используемая для лечения рака кожи. Во время операции по Мосу тонкие
+              слои кожи постепенно удаляются и исследуются до тех пор, пока не
+              останется только свободная от рака ткань.
             </div>
           </div>
-          <div class="factorsRiskGroup-item">
-            <div class="factorsRiskGroup-item--left">
-              <img src="./bazaliomaIMG/factors/clarity_factory-line.svg" alt="" />
+          <div class="bazaliomaServices">
+            <div class="bazaliomaServices_item">
+              <div class="leftBazServ">
+                <img src="./img/ph_bed-bold.svg" alt="" class="bazServIt" />
+              </div>
+              <div class="rightBazServ">
+                <div class="titleBazServ">Операция</div>
+                <div class="descBazServ">
+                  Операция проходит в полностью оборудованной и комфортной
+                  операционной
+                </div>
+              </div>
             </div>
-            <div class="factorsRiskGroup-item--right">
-              <p class="RiskTitle">Воздействие канцерогенных веществ</p>
+            <div class="bazaliomaServices_item">
+              <div class="leftBazServ">
+                <img src="./img/charm_circle-tick.svg" alt="" class="bazServIt" />
+              </div>
+              <div class="rightBazServ">
+                <div class="titleBazServ">Ожидаемые результаты</div>
+                <div class="descBazServ">
+                  Фактический уровень излечения составляет 99%
+                </div>
+              </div>
+            </div>
+            <div class="bazaliomaServices_item">
+              <div class="leftBazServ">
+                <img
+                  src="./img/gg_arrow-bottom-right-o.svg"
+                  alt=""
+                  class="bazServIt"
+                />
+              </div>
+              <div class="rightBazServ">
+                <div class="titleBazServ">Риски</div>
+                <div class="descBazServ">Риски осложнений ничтожно малы</div>
+              </div>
             </div>
           </div>
-          <div class="factorsRiskGroup-item">
-            <div class="factorsRiskGroup-item--left">
-              <img src="./bazaliomaIMG/factors/fluent-mdl2_family.svg
-              " alt="" />
+        </section>
+      </section>
+      <section class="plan container">
+        <div class="plan-circle1"></div>
+        <div class="plan-circle2"></div>
+        <h2 class="plan__title">Каков план действий?</h2>
+        <p class="plan__description">
+          Вы – самое дорогое, что у Вас есть. Здоровье – очень хрупкая вещь.
+          Поэтому будьте к себе максимально внимательны. Любые появившиеся
+          неровности, новообразования, пятна на коже стоит показать доктору. Не
+          затягивайте с визитом. Это не тот случай, когда можно подождать.
+        </p>
+        <p class="plan__description">
+          Что Вы получаете при визите ко мне? Решение проблемы, которое будет
+          состоять из трёх этапов.
+        </p>
+        <div class="plan__steps">
+          <div class="plan__steps_item">
+            <img src="./img/1 1.svg" alt="" class="planImg" />
+            <div class="leftPl">
+              <p class="stepPlan">1 этап</p>
+            <p class="descPlan">
+              Консультация, назначение анализа/исследования, для постановки
+              точного диагноза.
+            </p>
             </div>
-            <div class="factorsRiskGroup-item--right">
-              <p class="RiskTitle">Семейный анамнез рака кожи</p>
+          
+          </div>
+          <div class="plan__steps_item">
+            <img src="./img/sa-28 1.svg" alt="" class="planImg" />
+            <div class="leftPl">
+              <p class="stepPlan">2 этап</p>
+            <p class="descPlan">
+              Получение результатов исследований и назначения дня операции.
+            </p>
+            </div>
+            
+          </div>
+          <div class="plan__steps_item">
+            <img src="./img/3 787426.svg" alt="" class="planImg" />
+            <div class="leftPl">
+              <p class="stepPlan">3 этап</p>
+            <p class="descPlan">1
+              <span>День операции.</span> Пациент в этот же день идёт домой со
+              100% пониманием того, что он здоров!
+            </p>
+            </div>
+            
+          </div>
+        </div>
+        <button class="title__zapic" onclick="hello()">Записаться на консультацию</button>
+      </section>
+      <section class="MOHC">
+        <section class="contMOHC container">
+          <div class="mohc-circle1"></div>
+          <div class="mohc-frame1"><img src="./img/Frame 4.svg" alt=""></div>
+          <h2 class="mohcTitle">
+            Почему пациенты выбирают хирургию Моса (MOHS)?
+          </h2>
+          <p class="mohcDesc">
+            Пациенты и медицинские работники высоко ценят эту форму лечения рака
+            кожи, потому что:
+          </p>
+          <div class="mohsGroup">
+            <div class="mohsGroup__item">
+              <img
+                src="./img/5094677_alarm_clock_time_watch_icon 1.svg"
+                alt=""
+                class="mohsGroup__item-img frst"
+              />
+              <div class="leftmohs">
+                <p class="mohsGroup__item-title">
+                Вы возвращаетесь домой в тот же день
+              </p>
+              <p class="mohsGroup__item-desc">
+                Операция Моса (МОНS) идеально подходит для тех, кто не хочет весь
+                день проводить в больнице. В большинстве случаев это занимает от 2
+                до 4 часов.
+              </p>
+              </div>
+            
+            </div>
+            <div class="mohsGroup__item">
+              <img src="./img/2 2.svg" alt="" class="mohsGroup__item-img" />
+              <div class="leftmohs">
+                <p class="mohsGroup__item-title">Чрезвычайно осторожно</p>
+              <p class="mohsGroup__item-desc">
+                Хирург удаляет ТОЛЬКО те ткани, которые поражены. Во время
+                операции проводится гистологическое исследование удалённых
+                участков, что даёт потрясающий результат.
+              </p>
+              </div>
+            
+            </div>
+            <div class="mohsGroup__item">
+              <img
+                src="./img/7853764_approved_kashifarif_check_mark_accept_icon 1.svg"
+                alt=""
+                class="mohsGroup__item-img"
+              />
+              <div class="leftmohs">
+                <p class="mohsGroup__item-title">Результат</p>
+              <p class="mohsGroup__item-desc">
+                Результат, при использовании метода микрографической хирургии Moca
+                (MOHS), составляет 99% для рака кожи, который ранее не лечился. И
+                94% для рака, который рецидивировал после иного лечения.
+              </p>
+              </div>
+            
             </div>
           </div>
-          <div class="factorsRiskGroup-item">
-            <div class="factorsRiskGroup-item--left">
-              <img src="./bazaliomaIMG/factors/mdi_invert-colours.svg" alt="" />
+        </section>
+      </section>
+      <section class="Services container">
+        <div class="services-frame"><img src="./img/Frame 4.svg" alt=""></div>
+        <div class="Services-circle1"></div>
+        <div class="Services-circle2"></div>
+        <h2 class="Services__title">Услуги</h2>
+
+        <p class="Services__descriprion">
+          На консультации мы составляем смету, обсуждаем её и согласовываем.
+        </p>
+        <p class="Services__descriprion">
+          Все цены указаны в евро, оплата в рублях по текущему курсу.
+        </p>
+
+        <div class="Services__groups">
+          <div class="Services__group_item">
+            <div class="Services__item-head">
+              <img
+                src="./img/fluent_chat-24-regular.svg"
+                alt=""
+                class="Services_head-img"
+              />
+              <p class="Services_head-title">Консультация</p>
             </div>
-            <div class="factorsRiskGroup-item--right">
-              <p class="RiskTitle">Светлая кожа</p>
-              <p class="RiskDescription"></p>
+            <div class="Services__group_item-main">
+              <p class="Services__item-description">
+                На консультации мы с Вами проводим осмотр. Определяем точный
+                диагноз. Изучаем исследования, которые возможно есть у Вас.
+                Обсуждаем возможные варианты лечения.
+              </p>
+              <div class="Services__item-btns">
+                <button class="Services__zapic btn-serv " onclick="hello()">Записаться</button>
+                <button class="Services__more btn-serv">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Services__group_item">
+            <div class="Services__item-head">
+              <img
+                src="./img/carbon_microscope.svg"
+                alt=""
+                class="Services_head-img"
+              />
+              <p class="Services_head-title">Биопсия</p>
+            </div>
+            <div class="Services__group_item-main">
+              <p class="Services__item-description">
+                На консультации мы с Вами проводим осмотр. Определяем точный
+                диагноз. Изучаем исследования, которые возможно есть у Вас.
+              </p>
+              <div class="Services__item-btns">
+                <button class="Services__zapic btn-serv "  onclick="hello()">Записаться</button>
+                <button class="Services__more btn-serv">Подробнее</button>
+              </div>
+            </div>
+          </div>
+          <div class="Services__group_item">
+            <div class="Services__item-head">
+              <img
+                src="./img/mingcute_nose-line.svg"
+                alt=""
+                class="Services_head-img"
+              />
+              <p class="Services_head-title">Удаление базалиомы на носу</p>
+            </div>
+            <div class="Services__group_item-main">
+              <div class="Services__item-description">
+                На консультации мы с Вами проводим осмотр. Определяем точный
+                диагноз. Изучаем исследования, которые возможно есть у Вас.
+                Обсуждаем возможные варианты лечения.
+              </div>
+              <p class="Services__item-btns">
+                <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
+                <button class="Services__more btn-serv">Подробнее</button>
+              </p>
+            </div>
+          </div>
+
+          <div class="Services__group_item">
+            <div class="Services__item-head">
+              <img
+                src="./img/akar-icons_eye.svg"
+                alt=""
+                class="Services_head-img"
+              />
+              <p class="Services_head-title">Удаление базалиомы на веке</p>
+            </div>
+            <div class="Services__group_item-main">
+              <p class="Services__item-description">
+                На консультации мы с Вами проводим осмотр. Определяем точный
+                диагноз. Изучаем исследования, которые возможно есть у Вас.
+              </p>
+              <div class="Services__item-btns">
+                <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
+                <button class="Services__more btn-serv">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Services__group_item">
+            <div class="Services__item-head">
+              <img
+                src="./img/ic_outline-face.svg"
+                alt=""
+                class="Services_head-img"
+              />
+              <p class="Services_head-title">Удаление базалиомы на лице</p>
+            </div>
+            <div class="Services__group_item-main">
+              <p class="Services__item-description">
+                На консультации мы с Вами проводим осмотр. Определяем точный
+                диагноз. Изучаем исследования, которые возможно есть у Вас.
+              </p>
+              <div class="Services__item-btns">
+                <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
+                <button class="Services__more btn-serv">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Services__group_item">
+            <div class="Services__item-head">
+              <img
+                src="./img/solar_syringe-linear.svg"
+                alt=""
+                class="Services_head-img"
+              />
+              <p class="Services_head-title">
+                Удаление базалиомы с реконст-ей тканей
+              </p>
+            </div>
+            <div class="Services__group_item-main">
+              <p class="Services__item-description">
+                На консультации мы с Вами проводим осмотр. Определяем точный
+                диагноз. Изучаем исследования, которые возможно есть у Вас.
+              </p>
+              <div class="Services__item-btns">
+                <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
+                <button class="Services__more btn-serv">Подробнее</button>
+              </p>
+            </div>
+          </div>
+      </div>
+          <div class="Services__group_item">
+            <div class="Services__item-head">
+              <img
+                src="./img/9035508_woman_outline_icon 1.svg"
+                alt=""
+                class="Services_head-img"
+              />
+              <p class="Services_head-title">Базалиома у женщин</p>
+            </div>
+            <div class="Services__group_item-main">
+              <p class="Services__item-description">
+              На консультации мы с Вами проводим осмотр. Определяем точный
+                диагноз. Изучаем исследования, которые возможно есть у Вас.
+              </p>
+              <div class="Services__item-btns">
+                <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
+                <button class="Services__more btn-serv">Подробнее</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="Services__group_item">
+            <div class="Services__item-head">
+              <img
+                src="./img/ion_man-outline.svg"
+                alt=""
+                class="Services_head-img"
+              />
+              <p class="Services_head-title">Базалиома у мужчин</p>
+            </div>
+            <div class="Services__group_item-main">
+              <p class="Services__item-description">
+                На консультации мы с Вами проводим осмотр. Определяем точный диагноз. Изучаем исследования, которые возможно есть у Вас. 
+              </p>
+              <div class="Services__item-btns">
+                <button class="Services__zapic btn-serv" onclick="hello()">Записаться</button>
+                <button class="Services__more btn-serv">Подробнее</button>
+              </div>
+              
+            </div>
+            
+          </div>
+          <button class="title__zapic allServBtnOpac ">Смотреть все услуги</button>
+        </div> 
+        <button class="title__zapic allServBtn">Смотреть все услуги</button>
+      </section>
+      <section class="EMScont">
+        <div class="emsCircle1"></div>
+        <div class="emsCircle2"></div>
+        <div class="EMS container">
+          <h2 class="emsTitle">EMC – клиника номер 1 по оказанию высокотехнологичной помощи</h2>
+          <div class="emsGroup">
+            <div class="emsGroup-left">
+              <p class="emsText">
+                Мы работаем на базе самой современной клиники в России «Европейском Медицинском Центре» (EMC), с высокими стандартами качества. Европейский медицинский центр успешно прошёл аккредитацию Объединенной международной комиссии (Joint Commission International). Аккредитация по стандарту JCI означает «высший уровень» качества здравоохранения. 
+              </p>
+              <p class="emsText mar"> Мы располагаем абсолютно всем необходимым оборудованием для проведения комплексной диагностики при любом заболевании. 
+              </p>
+              <p class="emsList ">Применяем самые современные медицинские технологии: </p>
+              <ul >
+                <li class="emsListItem">молекулярную визуализацию (ПЭТ/КТ)</li>
+                <li class="emsListItem">роботизированную хирургию, новейшие методы лучевой терапии и радиохирургии</li>
+                <li class="emsListItem">ангиографическую систему последнего поколения для выполнения эндоваскулярных операций</li>  
+              </ul>
+              <button class="title__zapic btnOtz">Отзывы о клинике EMC</button>
+            </div>
+            <div class="emsGroup-right">
+              <div class="mainRightEms">
+                <img src="./img/European Medical Center - Schepkina Hospital Certificate  2021_page-0001 1.svg" alt="s" >
+                <div class="emsBackBlock"></div>
+              </div>
+              <div class="arrowsEms">
+                <button class="arEms leftSlid2"><img src="./img/left.svg" alt=""></button>
+                <button class="arEms rightSlide2"><img src="./img/right.svg" alt=""></button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </sectiom>
-    <script src="script.js"></script>
-  </body>
-</html>
+      </section>
+      <section class="otzivi container">
+        <div class="otziviBlockBack"></div>
+        <h2 class="otzivi__title">
+          Отзывы пациентов
+        </h2>
+        <div class="otzSlider">
+          
+        </div>
+
+        <div class="otzivi__group-flex">
+          <div class="otzivi__group_item item-flex">
+              <div class="otzivi_group_item-left">
+                <p class="otziv__item-title">Спасибо вам за вновь засиявшее в жизни солнце</p>
+                <p class="otziv__item-pacient">Елена, г. Москва</p>
+                <p class="otziv__item-description">Роман Сергеевич год назад сделал мне операцию по удалению очень редкого, как выяснилось в ЕМС, комбинированного новообразования (онкологи ряда клиник ошиблись в диагнозе) методом MOHS. Очень аккуратно и бережно, учитывая, что речь шла о лице. Прошел год, результат радует</p>
+                <button class="otziv_item-readMore">
+                  <p class="otziv-more">Читать полностью отзыв</p>
+                  <img class="arDown" src="./img/iconamoon_arrow-up-2-lightb;l.png" alt="">
+                </button>
+              </div>
+              
+              <div class="otzivi_group_item-right">
+                <img src="./img/uil_comment.svg" alt="">
+              </div>
+
+          </div>
+
+          
+        <div class="otzivi__group_item item-flex">
+          
+              <div class="otzivi_group_item-left">
+                <p class="otziv__item-title">Огромное спасибо хирургу Карташову Роману Сергеевичу</p>
+                <p class="otziv__item-pacient">Пациент, г. Москва</p>
+                <p class="otziv__item-description">Огромное спасибо хирургу Карташову Роману Сергеевичу и его команде за проведенную мне 14.02.22 операцию по удалению базилиомы носа методом МОХО. Метод заинтересовал меня тем, что не надо мучительно ждать результата гистологии несколько дней, гистология выполняется на месте во время операции.</p>
+                <button class="otziv_item-readMore"> <p class="otziv-more">Читать полностью отзыв</p>
+                  <img class="arDown" src="./img/iconamoon_arrow-up-2-lightb;l.png" alt=""></button>
+              </div>
+              
+              <div class="otzivi_group_item-right">
+                <img src="./img/uil_comment.svg" alt="">
+              </div>
+
+          </div>
+        </div>
+
+        <div class="otzivi__group">
+
+          <div class="otzivi__group_item">
+              <div class="otzivi_group_item-left">
+                <p class="otziv__item-title">Спасибо вам за вновь засиявшее в жизни солнце</p>
+                <p class="otziv__item-pacient">Елена, г. Москва</p>
+                <p class="otziv__item-description">Роман Сергеевич год назад сделал мне операцию по удалению очень редкого, как выяснилось в ЕМС, комбинированного новообразования (онкологи ряда клиник ошиблись в диагнозе) методом MOHS. Очень аккуратно и бережно, учитывая, что речь шла о лице. Прошел год, результат радует</p>
+                <button class="otziv_item-readMore"> <p class="otziv-more">Читать полностью отзыв</p>
+                  <img class="arDown" src="./img/iconamoon_arrow-up-2-lightb;l.png" alt=""></button>
+              </div>
+              
+              <div class="otzivi_group_item-right">
+                <img src="./img/uil_comment.svg" alt="">
+              </div>
+
+          </div>
+
+          
+        <div class="otzivi__group_item">
+              <div class="otzivi_group_item-left">
+                <p class="otziv__item-title">Огромное спасибо хирургу Карташову Роману Сергеевичу</p>
+                <p class="otziv__item-pacient">Пациент, г. Москва</p>
+                <p class="otziv__item-description">Огромное спасибо хирургу Карташову Роману Сергеевичу и его команде за проведенную мне 14.02.22 операцию по удалению базилиомы носа методом МОХО. Метод заинтересовал меня тем, что не надо мучительно ждать результата гистологии несколько дней, гистология выполняется на месте во время операции.</p>
+                <button class="otziv_item-readMore"> <p class="otziv-more">Читать полностью отзыв</p>
+                  <img class="arDown" src="./img/iconamoon_arrow-up-2-lightb;l.png" alt=""></button>
+              </div>
+              
+              <div class="otzivi_group_item-right">
+                <img src="./img/uil_comment.svg" alt="">
+              </div>
+
+          </div>
+        </div>
+        <div class="arrowsOtz">
+                <button class="arEms leftSlide"><img src="./img/left.svg" alt=""></button>
+                <button class="arEms rightSlide"><img src="./img/right.svg" alt=""></button>
+              </div>
+      </section>
+      <section class="consultation">
+        <div class="consultation-cont container">
+         
+          <h2 class="consultation__title">Нужна консультация доктора?</h2>
+          <p class="consultation__text">Оставьте свой номер телефона, и я свяжусь с Вами и отвечу на все вопросы.</p>
+          <div class="consultation-block">
+            <div class="consultation-block-left">
+              <form action="" class="consultation-form">
+                <div class="form__item">
+                  <label for="NameLabel">Ваше имя:</label>
+                  <input type="text" id="NameLabel">
+                </div>
+                <div class="form__item">
+                  <label for="TelLabel">Телефон:</label>
+                  <input type="number" id="TelLabel">
+                </div>
+                <div class="form__item">
+                  <label for="EmailLabel">E-mail:</label>
+                  <input type="email" id="EmailLabel">
+                </div>
+                <div class="form__item">
+                  <label for="TextLabel">Ваш комментарий:</label>
+                  <input type="text" id="TextLabel">
+                </div>
+                <div class="soglGroup">
+                  <input type="checkbox" id="soglsCheck" class="realCheckbox">
+                  <!-- <span class="customCheckbox" onclick="clickers" ></span> -->
+                  <label  class="soglashenieText" for="soglsCheck">Принимаю условия <a href="#">пользовательского соглашения</a></label>
+                </div>
+                <input  type="submit" class="title__zapicCheck" value="Отправить"></input>
+              </form>
+            </div>
+            
+            <div class="consultation-block-right">
+              <div class="infoDoctorCons">
+                <p class="infoDoctorCons_name bl">Роман Карташов</p>
+                <p class="infoDoctorCons_dolgn bl">пластический и челюстно-лицевой хирург</p>
+                <p class="infoDoctorCons_phone bl">+7 (925) 123-96-87</p>
+                <p class="infoDoctorCons_email bl"><a href="#">roman@kartashov.com</a></p>
+              </div>
+              <img src="./img/doctor_smile 2.png" alt="">
+            </div>
+          </div>
+        </div>
+         <div class="consultatonBackBlock"></div>
+      </section>
+      <section class="map"></section>
+      <footer class="footer">
+        <div class="footer__cont container">
+          <div class="footerBackBlock"></div>
+          <div class="footer-left">
+            <a href="" class="footer-logo">
+            <img src="./img/logoWhite.svg" alt="" class="logo-img" />
+            <div class="logo-grpoup">
+              <p class="logo-nameFooter">Роман Карташов</p>
+              <p class="logo-descriptionFooter">
+                пластический и челюстно-лицевой хирург
+              </p>
+            </div>
+          </a>
+          <div class="footer-zapicGroup">
+            <p class="title-footZap">Записаться на консультацию</p>
+            <p class="time-footZap">(с 9:00 до 18:00):</p>
+          </div>
+          <p class="footer-number">+7 (925) 123-45-67</p>
+          <p class="footer-adres">г. Москва, ул.Щепкина, 35</p>
+          <div class="footer-icons">
+            <a href="#"><img src="./img/whatsup.svg" alt="" /></a>
+            <a href="#"><img src="./img/telegram.svg" alt="" /></a>
+            <a href="#"><img src="./img/inst.svg" alt="" /></a>
+          </div>
+          </div>
+          <div class="footer-right">
+            <div class="footer-right_nav">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Базалиома и её лечение</a></li>
+                <li><a href="#">Специалист</a></li>
+                <li><a href="#">Фото работ</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Контакты</a></li>
+                
+              </ul>
+            </div>
+            
+          </div>
+        
+        </div>
+          <div class="footer-icons-right">
+            <a href="#"><img class="tabletPhone" src="./img/tabler_phone-icon.svg" alt="" /></a>
+              <a href="#"><img src="./img/whatsup.svg" alt="" /></a>
+              <a href="#"><img src="./img/telegram.svg" alt="" /></a>
+              
+            </div>
+          <!-- <div class="mohc-frameFooter"><img src="./img/Frame 4.svg" alt=""></div> -->
+      </footer>
+    
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="./script.js"></script>     
+      <script src="./slider2.js"></script> 
+    </body>
+  </html>
