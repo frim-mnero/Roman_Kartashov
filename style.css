@@ -1416,15 +1416,11 @@ nav ul {
   height: 0;
   opacity: 0;
   z-index: -1; */
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
 }
 .check2 {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  z-index: -1;
+width: 10px;height: 10px;
 }
 .realCheckbox::before {
   content: "";
@@ -1792,7 +1788,7 @@ nav ul {
   line-height: 30px; /* 187.5% */
   gap: 4px;
 }
-.form input {
+.form input :not([type="checkbox"]){
   width: 340px;
   height: 56px;
   border-radius: 10px;
